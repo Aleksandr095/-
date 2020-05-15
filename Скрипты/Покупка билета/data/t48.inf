@@ -1,0 +1,9 @@
+[t48]
+FileName1=t48.html
+URL1=http://localhost:1080/WebTours/classes/FormDateUpdate.class
+Total=1
+RequestHeaderFile=t48_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t48_ResponseHeader.txt
+ContentType=
+SnapshotXmlFile=snapshot_42.xml

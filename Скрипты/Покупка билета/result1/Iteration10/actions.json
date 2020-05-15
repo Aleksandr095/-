@@ -1,0 +1,106 @@
+[
+    {
+        "actionName": "Action",
+        "steps": [
+            {
+                "stepId": "STEP73",
+                "stepName": "Url: WebTours",
+                "infFile": "t2.inf",
+                "time": 1589516204281
+            },
+            {
+                "stepId": "STEP74",
+                "stepName": "Submit Data: login.pl",
+                "infFile": "t3.inf",
+                "time": 1589516204423
+            },
+            {
+                "stepId": "STEP75",
+                "stepName": "Url: iecompatviewlist.xml",
+                "infFile": "t4.inf",
+                "time": 1589516204977
+            },
+            {
+                "stepId": "STEP76",
+                "stepName": "Url: welcome.pl",
+                "infFile": "t5.inf",
+                "time": 1589516205104
+            },
+            {
+                "stepId": "STEP77",
+                "stepName": "Submit Data: reservations.pl",
+                "infFile": "t6.inf",
+                "time": 1589516205209
+            },
+            {
+                "stepId": "STEP78",
+                "stepName": "Submit Data: reservations.pl_2",
+                "infFile": "t7.inf",
+                "time": 1589516205302
+            },
+            {
+                "stepId": "STEP79",
+                "stepName": "Submit Data: reservations.pl_3",
+                "infFile": "t8.inf",
+                "time": 1589516205404
+            },
+            {
+                "stepId": "STEP80",
+                "stepName": "Url: welcome.pl_2",
+                "infFile": "t9.inf",
+                "time": 1589516205529
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "login",
+                "rawStartTime": 1589516204282,
+                "rawEndTime": 1589516204424,
+                "thinkTime": 0.0,
+                "wastedTime": 0.01893138885498047
+            },
+            {
+                "transactionName": "go to Flight",
+                "rawStartTime": 1589516204978,
+                "rawEndTime": 1589516205129,
+                "thinkTime": 0.0,
+                "wastedTime": 0.04249119758605957
+            },
+            {
+                "transactionName": "insert to filds",
+                "rawStartTime": 1589516205129,
+                "rawEndTime": 1589516205209,
+                "thinkTime": 0.0,
+                "wastedTime": 0.021072864532470704
+            },
+            {
+                "transactionName": "change flight",
+                "rawStartTime": 1589516205209,
+                "rawEndTime": 1589516205302,
+                "thinkTime": 0.0,
+                "wastedTime": 0.016896486282348634
+            },
+            {
+                "transactionName": "Payment",
+                "rawStartTime": 1589516205302,
+                "rawEndTime": 1589516205405,
+                "thinkTime": 0.0,
+                "wastedTime": 0.016849756240844728
+            },
+            {
+                "transactionName": "logout",
+                "rawStartTime": 1589516205405,
+                "rawEndTime": 1589516205529,
+                "thinkTime": 0.0,
+                "wastedTime": 0.017605304718017579
+            },
+            {
+                "transactionName": "3_покупка билета",
+                "rawStartTime": 1589516204168,
+                "rawEndTime": 1589516205529,
+                "thinkTime": 0.0,
+                "wastedTime": 0.18294072151184083
+            }
+        ]
+    }
+]

@@ -1,0 +1,13 @@
+POST /cgi-bin/reservations.pl HTTP/1.1
+Accept: text/html, application/xhtml+xml, image/jxr, */*
+Referer: http://localhost:1080/cgi-bin/reservations.pl
+Accept-Language: ru,en-US;q=0.7,en;q=0.3
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko
+Content-Type: application/x-www-form-urlencoded
+Accept-Encoding: gzip, deflate
+Host: localhost:1080
+Content-Length: 409
+Connection: Keep-Alive
+Cache-Control: no-cache
+Cookie: MSO=SID&1589249058; MTUserInfo=firstName&Aleksandr&address2&&username&Aleksandr095&hash&21&lastName&Spodarev%0A&address1&%26%231050%3B%26%231072%3B%26%231083%3B%26%231080%3B%26%231085%3B%26%231080%3B%26%231085%3B%26%231072%3B%2036&creditCard&&expDate&%0A
+

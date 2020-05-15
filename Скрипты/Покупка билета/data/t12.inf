@@ -1,0 +1,11 @@
+[t12]
+FileName1=t12_edgecompatviewlist.xml
+URL1=https://iecvlist.microsoft.com/edge/desktop/1499812172/edgecompatviewlist.xml
+Total=1
+ContentType=text/xml
+SnapshotXmlFile=snapshot_10.xml
+RequestHeaderFile=t12_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t12_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

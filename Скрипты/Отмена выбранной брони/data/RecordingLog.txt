@@ -1,0 +1,128 @@
+[API Trapper      (3994:1e54)] Recording in 64-bit mode: C:\Program Files\Internet Explorer\IEXPLORE.EXE
+[API Trapper      (21c0:2a68)] Recording in 32-bit mode: C:\Program Files (x86)\Internet Explorer\IEXPLORE.EXE
+[Network Analyzer (21c0:178c)] ------------------------------------------------------------------------------------------
+[Network Analyzer (21c0:178c)] Load Network Traffic Analyzers:
+[Network Analyzer (21c0:178c)]     Analyzer Module: WPLUS (value=)
+[Network Analyzer (21c0:178c)]     Analyzer Module: WebBase (value=GetHttpProtocolAnalyzer:api_http_filter.dll)
+[Network Analyzer (21c0:178c)]     + Network Analyzer: api_http_filter.dll @ GetHttpProtocolAnalyzer Loaded!
+[Network Analyzer (21c0:178c)]     + Interception Auditors: WinInetWplusInterceptionAudit:api_http_filter.dll
+[Network Analyzer (21c0:178c)]     Analyzer Module: QTWeb (value=GetWebSocketProtocolAnalyzer:WebSocketAnalyzer.dll)
+[Network Analyzer (21c0:178c)]     + Network Analyzer: WebSocketAnalyzer.dll @ GetWebSocketProtocolAnalyzer Loaded!
+[Network Analyzer (21c0:178c)] ------------------------------------------------------------------------------------------
+[Network Analyzer (21c0:29d8)] Address lookup for DESKTOP-FURHNAG = 192.168.1.4
+[Net An. Warning  (21c0:178c)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (21c0:178c)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (21c0:178c)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (21c0:178c)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer (21c0:2914)] Address lookup for DESKTOP-FURHNAG = 192.168.1.4
+[Network Analyzer (21c0:2914)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid=  1)  PROXIED!
+[Web Request      (21c0:29d8)] "GET /WebTours/"   
+[Network Analyzer (21c0:29d8)]   (Sid:  1) Client -> Server @ : 288 bytes (Service=HTTP)
+[Network Analyzer (21c0:29d8)]   (Sid:  1) Server -> Client : 665 bytes  (Service=HTTP)
+[Web Request      (21c0:29d8)] "GET /WebTours/header.html"   
+[Network Analyzer (21c0:29d8)]   (Sid:  1) Client -> Server @ : 341 bytes (Service=HTTP)
+[Network Analyzer (21c0:29d8)]   (Sid:  1) Server -> Client : 1008 bytes  (Service=HTTP)
+[Web Request      (21c0:29d8)] "GET /cgi-bin/welcome.pl?signOff=true"   
+[Network Analyzer (21c0:29d8)]   (Sid:  1) Client -> Server @ : 352 bytes (Service=HTTP)
+[Network Analyzer (21c0:29d8)]   (Sid:  1) Server -> Client : 1020 bytes  (Service=HTTP)
+[Network Analyzer (21c0:29d8)]   (Sid:  1) Server -> Client : 5 bytes  (Service=HTTP)
+[Web Request      (21c0:29d8)] "GET /WebTours/images/hp_logo.png"   
+[Network Analyzer (21c0:29d8)]   (Sid:  1) Client -> Server @ : 372 bytes (Service=HTTP)
+[Network Analyzer (21c0:3338)] Address lookup for DESKTOP-FURHNAG = 192.168.1.4
+[Network Analyzer (21c0:3338)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid=  2)  PROXIED!
+[Network Analyzer (21c0:2914)] Address lookup for DESKTOP-FURHNAG = 192.168.1.4
+[Web Request      (21c0:29d8)] "GET /cgi-bin/nav.pl?in=home"   
+[Network Analyzer (21c0:29d8)]   (Sid:  2) Client -> Server @ : 393 bytes (Service=HTTP)
+[Network Analyzer (21c0:2914)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid=  3)  PROXIED!
+[Web Request      (21c0:29d8)] "GET /WebTours/home.html"   
+[Network Analyzer (21c0:29d8)]   (Sid:  3) Client -> Server @ : 389 bytes (Service=HTTP)
+[Network Analyzer (21c0:29d8)]   (Sid:  3) Server -> Client : 1661 bytes  (Service=HTTP)
+[Web Request      (21c0:29d8)] "GET /WebTours/images/webtours.png"   
+[Network Analyzer (21c0:29d8)]   (Sid:  3) Client -> Server @ : 373 bytes (Service=HTTP)
+[Network Analyzer (21c0:29d8)]   (Sid:  3) Server -> Client : 4487 bytes  (Service=HTTP)
+[Network Analyzer (21c0:29d8)]   (Sid:  1) Server -> Client : 899 bytes  (Service=HTTP)
+[Network Analyzer (21c0:29d8)]   (Sid:  2) Server -> Client : 1749 bytes  (Service=HTTP)
+[Network Analyzer (21c0:29d8)]   (Sid:  2) Server -> Client : 5 bytes  (Service=HTTP)
+[Web Request      (21c0:29d8)] "GET /WebTours/images/mer_login.gif"   
+[Network Analyzer (21c0:29d8)]   (Sid:  2) Client -> Server @ : 404 bytes (Service=HTTP)
+[Network Analyzer (21c0:29d8)]   (Sid:  2) Server -> Client : 977 bytes  (Service=HTTP)
+[Web Request      (21c0:29d8)] "GET /favicon.ico"   
+[Network Analyzer (21c0:29d8)]   (Sid:  2) Client -> Server @ : 231 bytes (Service=HTTP)
+[Network Analyzer (21c0:29d8)]   (Sid:  2) Server -> Client : 424 bytes  (Service=HTTP)
+[Net An. Warning  (21c0:178c)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (21c0:178c)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Web Request      (21c0:29d8)] "POST /cgi-bin/login.pl"   
+[Network Analyzer (21c0:29d8)]   (Sid:  2) Client -> Server @ : 594 bytes (Service=HTTP)
+[Network Analyzer (21c0:29d8)]   (Sid:  2) Server -> Client : 850 bytes  (Service=HTTP)
+[Network Analyzer (21c0:29d8)]   (Sid:  2) Server -> Client : 5 bytes  (Service=HTTP)
+[Web Request      (21c0:29d8)] "GET /cgi-bin/nav.pl?page=menu&in=home"   
+[Network Analyzer (21c0:29d8)]   (Sid:  2) Client -> Server @ : 502 bytes (Service=HTTP)
+[Web Request      (21c0:29d8)] "GET /cgi-bin/login.pl?intro=true"   
+[Network Analyzer (21c0:29d8)]   (Sid:  1) Client -> Server @ : 497 bytes (Service=HTTP)
+[Network Analyzer (21c0:29d8)]   (Sid:  1) Server -> Client : 1154 bytes  (Service=HTTP)
+[Network Analyzer (21c0:29d8)]   (Sid:  1) Server -> Client : 5 bytes  (Service=HTTP)
+[Network Analyzer (21c0:29d8)]   (Sid:  2) Server -> Client : 1744 bytes  (Service=HTTP)
+[Network Analyzer (21c0:29d8)]   (Sid:  2) Server -> Client : 5 bytes  (Service=HTTP)
+[Web Request      (21c0:29d8)] "GET /WebTours/images/flights.gif"   
+[Network Analyzer (21c0:29d8)]   (Sid:  2) Client -> Server @ : 526 bytes (Service=HTTP)
+[Web Request      (21c0:29d8)] "GET /WebTours/images/itinerary.gif"   
+[Network Analyzer (21c0:29d8)]   (Sid:  1) Client -> Server @ : 528 bytes (Service=HTTP)
+[Web Request      (21c0:29d8)] "GET /WebTours/images/in_home.gif"   
+[Network Analyzer (21c0:29d8)]   (Sid:  3) Client -> Server @ : 526 bytes (Service=HTTP)
+[Network Analyzer (21c0:29d8)]   (Sid:  3) Server -> Client : 986 bytes  (Service=HTTP)
+[Web Request      (21c0:29d8)] "GET /WebTours/images/signoff.gif"   
+[Network Analyzer (21c0:29d8)]   (Sid:  3) Client -> Server @ : 526 bytes (Service=HTTP)
+[Network Analyzer (21c0:29d8)]   (Sid:  3) Server -> Client : 1049 bytes  (Service=HTTP)
+[Net An. Warning  (21c0:178c)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (21c0:178c)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer (21c0:29d8)]   (Sid:  1) Server -> Client : 1031 bytes  (Service=HTTP)
+[Network Analyzer (21c0:178c)] Address lookup for DESKTOP-FURHNAG = 192.168.1.4
+[Network Analyzer (21c0:3338)] Address lookup for DESKTOP-FURHNAG = 192.168.1.4
+[Network Analyzer (21c0:178c)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid=  4)  PROXIED!
+[Network Analyzer (21c0:3338)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid=  5)  PROXIED!
+[Network Analyzer (21c0:29d8)]   (Sid:  2) Server -> Client : 1024 bytes  (Service=HTTP)
+[Network Analyzer (21c0:178c)] Address lookup for DESKTOP-FURHNAG = 192.168.1.4
+[Network Analyzer (21c0:178c)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid=  6)  PROXIED!
+[Web Request      (21c0:29d8)] "GET /cgi-bin/welcome.pl?page=itinerary"   
+[Network Analyzer (21c0:29d8)]   (Sid:  2) Client -> Server @ : 519 bytes (Service=HTTP)
+[Network Analyzer (21c0:29d8)]   (Sid:  2) Server -> Client : 813 bytes  (Service=HTTP)
+[Network Analyzer (21c0:29d8)]   (Sid:  2) Server -> Client : 5 bytes  (Service=HTTP)
+[Web Request      (21c0:29d8)] "GET /cgi-bin/nav.pl?page=menu&in=itinerary"   
+[Network Analyzer (21c0:29d8)]   (Sid:  2) Client -> Server @ : 524 bytes (Service=HTTP)
+[Web Request      (21c0:29d8)] "GET /cgi-bin/itinerary.pl"   
+[Network Analyzer (21c0:29d8)]   (Sid:  1) Client -> Server @ : 507 bytes (Service=HTTP)
+[Network Analyzer (21c0:29d8)]   (Sid:  1) Server -> Client : 3980 bytes  (Service=HTTP)
+[Network Analyzer (21c0:29d8)]   (Sid:  2) Server -> Client : 1744 bytes  (Service=HTTP)
+[Network Analyzer (21c0:29d8)]   (Sid:  1) Server -> Client : 5 bytes  (Service=HTTP)
+[Network Analyzer (21c0:29d8)]   (Sid:  2) Server -> Client : 5 bytes  (Service=HTTP)
+[Web Request      (21c0:29d8)] "GET /WebTours/images/cancelreservation.gif"   
+[Network Analyzer (21c0:29d8)]   (Sid:  1) Client -> Server @ : 524 bytes (Service=HTTP)
+[Web Request      (21c0:29d8)] "GET /WebTours/images/cancelallreservations.gif"   
+[Network Analyzer (21c0:29d8)]   (Sid:  3) Client -> Server @ : 528 bytes (Service=HTTP)
+[Web Request      (21c0:29d8)] "GET /WebTours/images/in_itinerary.gif"   
+[Network Analyzer (21c0:29d8)]   (Sid:  2) Client -> Server @ : 536 bytes (Service=HTTP)
+[Web Request      (21c0:29d8)] "GET /WebTours/images/home.gif"   
+[Network Analyzer (21c0:29d8)]   (Sid:  4) Client -> Server @ : 528 bytes (Service=HTTP)
+[Network Analyzer (21c0:29d8)]   (Sid:  3) Server -> Client : 1040 bytes  (Service=HTTP)
+[Network Analyzer (21c0:29d8)]   (Sid:  4) Server -> Client : 987 bytes  (Service=HTTP)
+[Network Analyzer (21c0:29d8)]   (Sid:  1) Server -> Client : 1129 bytes  (Service=HTTP)
+[Network Analyzer (21c0:29d8)]   (Sid:  2) Server -> Client : 1031 bytes  (Service=HTTP)
+[Network Analyzer (21c0:29d8)]   (Sid:  3) Connection Terminated (by Server)
+[Network Analyzer (21c0:29d8)]   (Sid:  4) Connection Terminated (by Server)
+[Network Analyzer (21c0:29d8)]   (Sid:  1) Connection Terminated (by Server)
+[Network Analyzer (21c0:29d8)]   (Sid:  2) Connection Terminated (by Server)
+[Web Request      (21c0:29d8)] "POST /cgi-bin/itinerary.pl"   
+[Network Analyzer (21c0:29d8)]   (Sid:  5) Client -> Server @ : 702 bytes (Service=HTTP)
+[Network Analyzer (21c0:29d8)]   (Sid:  5) Server -> Client : 2871 bytes  (Service=HTTP)
+[Network Analyzer (21c0:29d8)]   (Sid:  5) Server -> Client : 5 bytes  (Service=HTTP)
+[Web Request      (21c0:29d8)] "GET /cgi-bin/welcome.pl?signOff=1"   
+[Network Analyzer (21c0:29d8)]   (Sid:  5) Client -> Server @ : 519 bytes (Service=HTTP)
+[Network Analyzer (21c0:29d8)]   (Sid:  5) Server -> Client : 1020 bytes  (Service=HTTP)
+[Network Analyzer (21c0:29d8)]   (Sid:  5) Server -> Client : 5 bytes  (Service=HTTP)
+[Web Request      (21c0:29d8)] "GET /cgi-bin/nav.pl?in=home"   
+[Network Analyzer (21c0:29d8)]   (Sid:  5) Client -> Server @ : 390 bytes (Service=HTTP)
+[Network Analyzer (21c0:29d8)]   (Sid:  5) Server -> Client : 1751 bytes  (Service=HTTP)
+[Network Analyzer (21c0:29d8)]   (Sid:  5) Server -> Client : 5 bytes  (Service=HTTP)
+[Web Request      (21c0:29d8)] "GET /WebTours/home.html"   
+[Network Analyzer (21c0:29d8)]   (Sid:  5) Client -> Server @ : 487 bytes (Service=HTTP)
+[Network Analyzer (21c0:29d8)]   (Sid:  5) Server -> Client : 194 bytes  (Service=HTTP)

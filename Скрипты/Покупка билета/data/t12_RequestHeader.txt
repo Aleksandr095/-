@@ -1,0 +1,8 @@
+GET /edge/desktop/1499812172/edgecompatviewlist.xml HTTP/1.1
+Accept: */*
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 Edge/18.18363
+Cookie: SRCHUID=V=2&GUID=422240F17A5F4911A6BB8CC46069374E&dmnchg=1; SRCHD=AF=NOFORM; SRCHUSR=DOB=20200510
+Host: iecvlist.microsoft.com
+Connection: Keep-Alive
+

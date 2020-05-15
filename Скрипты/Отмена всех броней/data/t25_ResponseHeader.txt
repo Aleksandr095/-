@@ -1,0 +1,10 @@
+HTTP/1.1 200 OK
+Date: Mon, 11 May 2020 23:02:20 GMT
+Server: Apache/2.2.21 (Win32)
+Expires: Sun, 10 May 2020 23:02:20 GMT
+Set-Cookie: MTUserInfo=hash&21&firstName&Aleksandr&lastName&Spodarev%0A&address1&%26%231050%3B%26%231072%3B%26%231083%3B%26%231080%3B%26%231085%3B%26%231080%3B%26%231085%3B%26%231072%3B%2036&address2&&username&Aleksandr095; path=/
+Keep-Alive: timeout=5, max=93
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=ISO-8859-1
+

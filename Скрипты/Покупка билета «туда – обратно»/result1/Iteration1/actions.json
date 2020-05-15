@@ -1,0 +1,106 @@
+[
+    {
+        "actionName": "Action",
+        "steps": [
+            {
+                "stepId": "STEP1",
+                "stepName": "Url: WebTours",
+                "infFile": "t2.inf",
+                "time": 1589501404315
+            },
+            {
+                "stepId": "STEP2",
+                "stepName": "Url: iecompatviewlist.xml",
+                "infFile": "t3.inf",
+                "time": 1589501404925
+            },
+            {
+                "stepId": "STEP3",
+                "stepName": "Submit Data: login.pl",
+                "infFile": "t4.inf",
+                "time": 1589501405060
+            },
+            {
+                "stepId": "STEP4",
+                "stepName": "Image: Search Flights Button",
+                "infFile": "t5.inf",
+                "time": 1589501405202
+            },
+            {
+                "stepId": "STEP5",
+                "stepName": "Submit Data: reservations.pl",
+                "infFile": "t6.inf",
+                "time": 1589501405288
+            },
+            {
+                "stepId": "STEP6",
+                "stepName": "Submit Form: reservations.pl_2",
+                "infFile": "t7.inf",
+                "time": 1589501405390
+            },
+            {
+                "stepId": "STEP7",
+                "stepName": "Submit Form: reservations.pl_3",
+                "infFile": "t8.inf",
+                "time": 1589501405502
+            },
+            {
+                "stepId": "STEP8",
+                "stepName": "Url: welcome.pl",
+                "infFile": "t9.inf",
+                "time": 1589501405830
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "login",
+                "rawStartTime": 1589501404926,
+                "rawEndTime": 1589501405061,
+                "thinkTime": 0.0,
+                "wastedTime": 0.005609989166259766
+            },
+            {
+                "transactionName": "Переход на страницу полеты",
+                "rawStartTime": 1589501405061,
+                "rawEndTime": 1589501405202,
+                "thinkTime": 0.0,
+                "wastedTime": 0.0070493221282958988
+            },
+            {
+                "transactionName": "Выбор рейса",
+                "rawStartTime": 1589501405212,
+                "rawEndTime": 1589501405289,
+                "thinkTime": 0.0,
+                "wastedTime": 0.004235029220581055
+            },
+            {
+                "transactionName": "Выбор билета",
+                "rawStartTime": 1589501405289,
+                "rawEndTime": 1589501405390,
+                "thinkTime": 0.0,
+                "wastedTime": 0.0032050609588623049
+            },
+            {
+                "transactionName": "Оплата",
+                "rawStartTime": 1589501405390,
+                "rawEndTime": 1589501405503,
+                "thinkTime": 0.0,
+                "wastedTime": 0.0035953521728515627
+            },
+            {
+                "transactionName": "Просмотр броней",
+                "rawStartTime": 1589501405503,
+                "rawEndTime": 1589501405830,
+                "thinkTime": 0.0,
+                "wastedTime": 0.00696253776550293
+            },
+            {
+                "transactionName": "4_Покупка билета «туда – обратно»",
+                "rawStartTime": 1589501404926,
+                "rawEndTime": 1589501405831,
+                "thinkTime": 0.0,
+                "wastedTime": 0.033745527267456058
+            }
+        ]
+    }
+]

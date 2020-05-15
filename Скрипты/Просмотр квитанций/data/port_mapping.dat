@@ -1,0 +1,44 @@
+Registry settings:
+	*:1080
+		default	HTTP
+		Active	false
+		UseProxy	false
+		UserPrompt	false
+		SSL_Active	true
+		SSL_AutoSslDetect	false
+		Svr_SSL_Version	1
+		Svr_SSL_Ciphers	1
+		SSL_AutoGenCert	true
+		Svr_SSL_Certificate	true
+		Svr_SSL_Key	true
+		Svr_SSL_Password	true
+		Svr_SSL_Client_WinINet_Cert_Index	0
+		Clnt_SSL_Version	1
+		Clnt_SSL_Ciphers	1
+		Clnt_SSL_Certificate	1
+		Clnt_SSL_Key	1
+		Clnt_SSL_Password	1
+		Forward_Active	false
+		Forward_Port	0
+	*:1081
+		default	HTTP
+		Active	false
+		UseProxy	true
+		UserPrompt	false
+		SSL_Active	true
+		SSL_AutoSslDetect	false
+		Svr_SSL_Version	1
+		Svr_SSL_Ciphers	1
+		SSL_AutoGenCert	true
+		Svr_SSL_Certificate	true
+		Svr_SSL_Key	true
+		Svr_SSL_Password	true
+		Svr_SSL_Client_WinINet_Cert_Index	0
+		Clnt_SSL_Version	1
+		Clnt_SSL_Ciphers	1
+		Clnt_SSL_Certificate	1
+		Clnt_SSL_Key	1
+		Clnt_SSL_Password	1
+		Forward_Active	false
+		Forward_Port	0
+

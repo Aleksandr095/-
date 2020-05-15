@@ -1,0 +1,7 @@
+[hosts]
+localhost=
+iecvlist.microsoft.com=
+c.urs.microsoft.com=
+ocsp.digicert.com=
+crl3.digicert.com=
+crl4.digicert.com=

@@ -1,0 +1,41 @@
+[StartRecordingGMT]
+StartRecordingGMT_1=2020/05/11 00:07:30
+StartRecordingIsDst_1=0
+StartRecordingGMT_2=2020/05/11 22:17:27
+StartRecordingIsDst_2=0
+StartRecordingGMT_3=2020/05/11 22:20:39
+StartRecordingIsDst_3=0
+StartRecordingGMT_4=2020/05/11 22:31:26
+StartRecordingIsDst_4=0
+StartRecordingGMT_5=2020/05/11 22:33:17
+StartRecordingIsDst_5=0
+StartRecordingGMT_6=2020/05/12 01:15:39
+StartRecordingIsDst_6=0
+StartRecordingGMT_7=2020/05/12 01:18:08
+StartRecordingIsDst_7=0
+StartRecordingGMT_8=2020/05/12 01:19:23
+StartRecordingIsDst_8=0
+StartRecordingGMT_9=2020/05/12 01:19:59
+StartRecordingIsDst_9=0
+StartRecordingGMT_10=2020/05/12 01:20:25
+StartRecordingIsDst_10=0
+StartRecordingGMT_11=2020/05/12 01:22:09
+StartRecordingIsDst_11=0
+StartRecordingGMT_12=2020/05/12 01:49:52
+StartRecordingIsDst_12=0
+StartRecordingGMT_13=2020/05/12 02:02:52
+StartRecordingIsDst_13=0
+StartRecordingGMT_14=2020/05/12 02:04:09
+StartRecordingIsDst_14=0
+StartRecordingGMT_15=2020/05/12 02:12:40
+StartRecordingIsDst_15=0
+StartRecordingGMT_16=2020/05/13 00:45:16
+StartRecordingIsDst_16=0
+StartRecordingGMT_17=2020/05/13 00:47:19
+StartRecordingIsDst_17=0
+[UserHomePage]
+UserHomePage=https://yandex.ru/?clid=2101081
+[User-Agent]
+User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko
+[Security]
+UsingPersistForAuthentication=1

@@ -1,1 +1,5 @@
-"1=on&flightID=2102962-7-uu&c_cgifields=valC_cgifields&removeFlights.x=70&removeFlights.y=7"
+"6=on&flightID=210297424-805-uu&.cgifields=6&flightID=2103003-15-uu&.cgifields=3&flightID=21030"
+"59299-23161-uu&.cgifields=7&flightID=210307420-3105-uu&.cgifields=9&flightID=210313356-3894-uu"
+"&.cgifields=2&flightID=210296-46-uu&.cgifields=8&flightID=210301869-5420-uu&.cgifields=1&fligh"
+"tID=21030393-6202-uu&.cgifields=4&flightID=2103081523-69317-uu&.cgifields=10&flightID=21031296"
+"72-77012-uu&.cgifields=5&removeFlights.x=36&removeFlights.y=4"

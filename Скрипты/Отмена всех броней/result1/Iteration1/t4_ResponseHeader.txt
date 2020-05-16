@@ -1,0 +1,19 @@
+HTTP/2.0 200
+Status: 200
+content-encoding: gzip
+age: 3390
+cache-control: max-age=21600
+content-md5: rSiN7en5a6m/WSjuu4T0MA==
+content-type: text/xml
+date: Sat, 16 May 2020 00:18:03 GMT
+etag: 0x8D7D69059C1C9A1
+last-modified: Wed, 01 Apr 2020 22:59:36 GMT
+server: ECAcc (frc/8E9D)
+vary: Accept-Encoding
+x-cache: HIT
+x-ms-blob-type: BlockBlob
+x-ms-lease-status: unlocked
+x-ms-request-id: e9670b53-801e-0012-760f-2bd91e000000
+x-ms-version: 2009-09-19
+content-length: 25995
+

@@ -2,8 +2,8 @@
 -DCCI
 -D_IDA_XL
 -DWINNT
--IC:\Users\Александр-ПК\Documents\VuGen\Scripts\Просмотр квитанций
+-IE:\Нагрузочное тестирование\Скрипты\Просмотр квитанций
 -IC:\Program Files (x86)\Micro Focus\LoadRunner\include
--ec:\users\александр-пк\documents\vugen\scripts\просмотр квитанций\\logfile.log
-c:\users\александр-пк\documents\vugen\scripts\просмотр квитанций\\combined_Просмотр квитанций.c
-c:\users\александр-пк\documents\vugen\scripts\просмотр квитанций\\pre_cci.c
+-ee:\нагрузочное тестирование\скрипты\просмотр квитанций\\logfile.log
+e:\нагрузочное тестирование\скрипты\просмотр квитанций\\combined_Просмотр квитанций.c
+e:\нагрузочное тестирование\скрипты\просмотр квитанций\\pre_cci.c

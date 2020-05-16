@@ -52,9 +52,15 @@ vuser_init=cci
 Action=cci
 vuser_end=cci
 [TransactionsOrder]
-Order=
+Order="2_Отмена всех броней__*delimiter*__Вход__*delimiter*__Переход на страницу Iternarary__*delimiter*__Отмена бронирования__*delimiter*__Выход"
 [StateManagement]
-LastReplayStatus=1
+LastReplayStatus=2
 [ActiveReplay]
 LastReplayedRunName=result1
 ActiveRunName=result1
+[Transactions]
+"2_Отмена всех броней"=
+Вход=
+"Переход на страницу Iternarary"=
+"Отмена бронирования"=
+Выход=

@@ -1,7 +1,7 @@
 [General]
 Type=Multi
 DefaultCfg=default.cfg
-ParameterFile=
+ParameterFile=Просмотр квитанций.prm
 GlobalParameterFile=
 NewFunctionHeader=1
 RunType=cci
@@ -44,19 +44,22 @@ vuser_init=0
 Action=1
 vuser_end=0
 [Replayed Actions]
-vuser_init=0
-Action=0
-vuser_end=0
+vuser_init=1
+Action=1
+vuser_end=1
 [Interpreters]
 vuser_init=cci
 Action=cci
 vuser_end=cci
 [TransactionsOrder]
-Order="Просмотр квитанций"
+Order="5_Просмотр квитанций__*delimiter*__Login__*delimiter*__Переход на страницу Itinerary__*delimiter*__logout"
 [StateManagement]
-LastReplayStatus=0
+LastReplayStatus=1
 [ActiveReplay]
-LastReplayedRunName=
-ActiveRunName=
+LastReplayedRunName=result1
+ActiveRunName=result1
 [Transactions]
-"Просмотр квитанций"=
+"5_Просмотр квитанций"=
+Login=
+"Переход на страницу Itinerary"=
+logout=

@@ -1,0 +1,80 @@
+[
+    {
+        "actionName": "Action",
+        "steps": [
+            {
+                "stepId": "STEP1",
+                "stepName": "Url: WebTours",
+                "infFile": "t2.inf",
+                "time": 1589588277461
+            },
+            {
+                "stepId": "STEP2",
+                "stepName": "Submit Data: login.pl",
+                "infFile": "t3.inf",
+                "time": 1589588279566
+            },
+            {
+                "stepId": "STEP3",
+                "stepName": "Url: iecompatviewlist.xml",
+                "infFile": "t4.inf",
+                "time": 1589588283479
+            },
+            {
+                "stepId": "STEP4",
+                "stepName": "Url: welcome.pl",
+                "infFile": "t5.inf",
+                "time": 1589588285481
+            },
+            {
+                "stepId": "STEP5",
+                "stepName": "Submit Data: itinerary.pl",
+                "infFile": "t6.inf",
+                "time": 1589588287538
+            },
+            {
+                "stepId": "STEP6",
+                "stepName": "Url: SignOff Button",
+                "infFile": "t7.inf",
+                "time": 1589588289632
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "Вход",
+                "rawStartTime": 1589588278962,
+                "rawEndTime": 1589588280568,
+                "thinkTime": 0.0,
+                "wastedTime": 0.005246400833129883
+            },
+            {
+                "transactionName": "Переход на страницу Iternarary",
+                "rawStartTime": 1589588284480,
+                "rawEndTime": 1589588285981,
+                "thinkTime": 0.0,
+                "wastedTime": 0.00499415397644043
+            },
+            {
+                "transactionName": "Отмена бронирования",
+                "rawStartTime": 1589588286983,
+                "rawEndTime": 1589588288038,
+                "thinkTime": 0.0,
+                "wastedTime": 0.0028405189514160158
+            },
+            {
+                "transactionName": "Выход",
+                "rawStartTime": 1589588289040,
+                "rawEndTime": 1589588290133,
+                "thinkTime": 0.0,
+                "wastedTime": 0.002662181854248047
+            },
+            {
+                "transactionName": "2_Отмена всех броней",
+                "rawStartTime": 1589588278462,
+                "rawEndTime": 1589588290633,
+                "thinkTime": 0.0,
+                "wastedTime": 0.025908470153808595
+            }
+        ]
+    }
+]

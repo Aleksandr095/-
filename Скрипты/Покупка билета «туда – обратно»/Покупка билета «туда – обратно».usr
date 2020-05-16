@@ -52,17 +52,17 @@ vuser_init=cci
 Action=cci
 vuser_end=cci
 [TransactionsOrder]
-Order="4_Покупка билета «туда – обратно»__*delimiter*__login__*delimiter*__Переход на страницу полеты__*delimiter*__Выбор рейса__*delimiter*__Выбор билета__*delimiter*__Оплата__*delimiter*__Просмотр броней"
+Order="4_Покупка билета туда - обратно__*delimiter*__Вход__*delimiter*__Заполнение полей__*delimiter*__Выбор рейса__*delimiter*__Переход на страницу Itinerary__*delimiter*__Переход на страницу Flight__*delimiter*__Оплата"
 [StateManagement]
 LastReplayStatus=1
 [ActiveReplay]
 LastReplayedRunName=result1
 ActiveRunName=result1
 [Transactions]
-"4_Покупка билета «туда – обратно»"=
-login=
-"Переход на страницу полеты"=
+"4_Покупка билета туда - обратно"=
+Вход=
+"Заполнение полей"=
 "Выбор рейса"=
-"Выбор билета"=
+"Переход на страницу Itinerary"=
+"Переход на страницу Flight"=
 Оплата=
-"Просмотр броней"=

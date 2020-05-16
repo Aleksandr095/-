@@ -46,7 +46,7 @@ WorkingDaysOn="0"
 [parameter:login]
 ColumnName="Col 1"
 Delimiter=","
-GenerateNewVal="Once"
+GenerateNewVal="EachIteration"
 OriginalValue=""
 OutOfRangePolicy="ContinueWithLast"
 ParamName="login"

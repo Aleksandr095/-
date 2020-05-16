@@ -2606,7 +2606,7 @@ vuser_init()
 # 1 "Action.c" 1
 Action()
 {
-	int random, flightID_count;
+	int random, flightID_count, i;
 	
 	
 	
@@ -2652,7 +2652,7 @@ Action()
 		"LAST");
 
 	web_reg_save_param_ex(
-		"ParamName=flightID",
+		"ParamName=c_flightids",
 	    "LB=<input type=\"hidden\" name\=\"flightID\" value\=\"",
 	    "RB=\"",
 	    "NotFound=warning",
@@ -2685,57 +2685,54 @@ Action()
 	lr_think_time(8);
 	
 	
-	     
-     
 
-    
 
-     
-
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-
-flightID_count =  atoi(lr_eval_string("{flightID_count}"));
+	flightID_count =  atoi(lr_eval_string("{c_flightids_count}"));
 	random = rand() % (flightID_count - 1) + 1;
 	
 	lr_save_int(random, "random");
 	
-	lr_save_string(lr_paramarr_idx("flightID", random), "valFlightID");
-	lr_save_string(lr_paramarr_idx("c_cgifields", random), "valC_cgifields");
 
-	lr_output_message("%d", random);
-	lr_output_message("%s", lr_paramarr_idx("flightID", random));
+    lr_param_sprintf("c_buffer","%s=on&", lr_eval_string("{random}"));
+ 
+    
 	
-	web_submit_data("itinerary.pl", 
-		"Action=http://localhost:1080/cgi-bin/itinerary.pl", 
-		"Method=POST", 
-		"TargetFrame=", 
-		"RecContentType=text/html", 
-		"Referer=http://localhost:1080/cgi-bin/itinerary.pl", 
-		"Snapshot=t25.inf", 
-		"Mode=HTML", 
-		"ITEMDATA", 
-		"Name={random}", "Value=on", "ENDITEM", 
-		
-		"Name=flightID", "Value={valFlightID}", "ENDITEM", 
-		"Name=c_cgifields", "Value=valC_cgifields", "ENDITEM",
-		
-		
-		"Name=removeFlights.x", "Value=70", "ENDITEM", 
-		"Name=removeFlights.y", "Value=7", "ENDITEM", 
-		"LAST");
+
+	for (i=1;i<=flightID_count;i++)
+    {
+	   lr_param_sprintf("c_buffer",
+        "%sflightID=%s&",
+        lr_eval_string("{c_buffer}"),
+        lr_paramarr_idx("c_flightids",
+        i));
+
+        lr_param_sprintf("c_buffer",
+        "%s.cgifields=%s&",
+        lr_eval_string("{c_buffer}"),
+        lr_paramarr_idx("c_cgifields",
+        i));	
+	}
+	
+	
+
+	lr_save_string(lr_eval_string("{c_buffer}removeFlights.x=36&removeFlights.y=4"), "c_wcr");
+	
+	 
+ 
+
+ 
+	
+	web_custom_request("itinerary.pl",
+	    "URL=http://localhost:1080/WebTours/itinerary.pl",
+	    "Method=POST",
+	    "Resource=0",
+	    "RecContentType=text/html",
+	    "Referer=http://localhost:1080/WebTours/itinerary.pl",
+	    "Snapshot=t23.inf",
+	    "Mode=HTTP",
+	    "Body={c_wcr}",
+	    "LAST");
+	
 
 	web_url("SignOff Button", 
 		"URL=http://localhost:1080/cgi-bin/welcome.pl?signOff=1", 

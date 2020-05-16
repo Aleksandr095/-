@@ -166,7 +166,7 @@ Registry settings:
 		default	false
 	TestDir
 		(Default)	
-		default	C:\Users\Александр-ПК\Documents\VuGen\Scripts\Отмена всех броней\data\
+		default	E:\Нагрузочное тестирование\Скрипты\Отмена всех броней\data\
 	TrapOnClient
 		default	true
 	TrapOnMainThreadOnly

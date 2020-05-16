@@ -2585,8 +2585,10 @@ void
 # 8 "globals.h" 2
 
 
+
  
  
+
 
 
 # 3 "c:\\users\\\340\353\345\352\361\340\355\344\360-\357\352\\documents\\vugen\\scripts\\\357\356\352\363\357\352\340 \341\350\353\345\362\340 \253\362\363\344\340 \226 \356\341\360\340\362\355\356\273\\\\combined_\317\356\352\363\357\352\340 \341\350\353\345\362\340 \253\362\363\344\340 \226 \356\341\360\340\362\355\356\273.c" 2
@@ -2602,16 +2604,6 @@ vuser_init()
 Action()
 {
 
-	char x[16] = "outboundFlight_x";
-	 
-	int random;
-	
-	random = rand() % 3 + 1;
-	
-	
-	x[15] = 6 + '0';
-	 
-	
  
 	web_reg_save_param_attrib(
 		"ParamName=userSession",
@@ -2626,14 +2618,19 @@ Action()
 
 	web_url("WebTours", 
 		"URL=http://localhost:1080/WebTours/", 
+		"TargetFrame=", 
 		"Resource=0", 
 		"RecContentType=text/html", 
 		"Referer=", 
-		"Snapshot=t1.inf", 
+		"Snapshot=t10.inf", 
 		"Mode=HTML", 
 		"LAST");
 
 	web_set_sockets_option("SSL_VERSION", "AUTO");
+
+	lr_start_transaction("4_Покупка билета туда - обратно");
+
+	lr_start_transaction("Вход");
 
 	web_add_cookie("SRCHUID=V=2&GUID=422240F17A5F4911A6BB8CC46069374E&dmnchg=1; DOMAIN=iecvlist.microsoft.com");
 
@@ -2646,60 +2643,69 @@ Action()
 
 	web_url("iecompatviewlist.xml", 
 		"URL=https://iecvlist.microsoft.com/IE11/1478281996/iecompatviewlist.xml", 
+		"TargetFrame=", 
 		"Resource=0", 
 		"RecContentType=text/xml", 
 		"Referer=", 
-		"Snapshot=t2.inf", 
+		"Snapshot=t11.inf", 
 		"Mode=HTML", 
 		"LAST");
 
-	lr_think_time(153);
+	lr_think_time(5);
 
-	lr_start_transaction("4_Покупка билета «туда – обратно»");
-
-	lr_start_transaction("login");
-	
 	web_submit_data("login.pl",
 		"Action=http://localhost:1080/cgi-bin/login.pl",
 		"Method=POST",
+		"TargetFrame=",
 		"RecContentType=text/html",
 		"Referer=http://localhost:1080/cgi-bin/nav.pl?in=home",
-		"Snapshot=t3.inf",
+		"Snapshot=t12.inf",
 		"Mode=HTML",
 		"ITEMDATA",
 		"Name=userSession", "Value={userSession}", "ENDITEM",
 		"Name=username", "Value={login}", "ENDITEM",
 		"Name=password", "Value={pass}", "ENDITEM",
 		"Name=JSFormSubmit", "Value=off", "ENDITEM",
-		"Name=login.x", "Value=59", "ENDITEM",
-		"Name=login.y", "Value=3", "ENDITEM",
-		"LAST");
-	
-	lr_end_transaction("login",2);
-	
-	lr_think_time(24);
-
-	lr_start_transaction("Переход на страницу полеты");
-
-	web_image("Search Flights Button", 
-		"Alt=Search Flights Button", 
-		"Snapshot=t4.inf", 
+		"Name=login.x", "Value=67", "ENDITEM",
+		"Name=login.y", "Value=2", "ENDITEM",
 		"LAST");
 
-	lr_end_transaction("Переход на страницу полеты",2);
+	lr_end_transaction("Вход",2);
+
+	lr_think_time(5);
+
+	lr_start_transaction("Переход на страницу Flight");
+	
+	web_url("Search Flights Button", 
+		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=search", 
+		"TargetFrame=body", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home", 
+		"Snapshot=t13.inf", 
+		"Mode=HTML", 
+		"LAST");
 
 	web_custom_request("FormDateUpdate.class", 
 		"URL=http://localhost:1080/WebTours/classes/FormDateUpdate.class", 
 		"Method=HEAD", 
+		"TargetFrame=", 
 		"Resource=1", 
 		"Referer=", 
-		"Snapshot=t5.inf", 
+		"Snapshot=t14.inf", 
 		"LAST");
 
-	lr_think_time(20);
-
-	lr_start_transaction("Выбор рейса");
+	lr_end_transaction("Переход на страницу Flight",2);
 	
+	lr_think_time(5);
+
+	lr_start_transaction("Заполнение полей");
+	
+
+	web_reg_find("Search=Body",
+		"Text=Flight Selections",
+		"LAST");
+
 	web_reg_save_param_ex(
 		"ParamName=outboundFlight",
 		"LB=\"outboundFlight\" value\=\"",
@@ -2723,91 +2729,119 @@ Action()
 	web_submit_data("reservations.pl", 
 		"Action=http://localhost:1080/cgi-bin/reservations.pl", 
 		"Method=POST", 
+		"TargetFrame=", 
 		"RecContentType=text/html", 
 		"Referer=http://localhost:1080/cgi-bin/reservations.pl?page=welcome", 
-		"Snapshot=t6.inf", 
+		"Snapshot=t15.inf", 
 		"Mode=HTML", 
 		"ITEMDATA", 
 		"Name=advanceDiscount", "Value=0", "ENDITEM", 
 		"Name=depart", "Value={depart}", "ENDITEM", 
 		"Name=departDate", "Value={departDate}", "ENDITEM", 
-		"Name=arrive", "Value={return}", "ENDITEM", 
+		"Name=arrive", "Value={arrive}", "ENDITEM", 
 		"Name=returnDate", "Value={returnDate}", "ENDITEM", 
 		"Name=numPassengers", "Value=1", "ENDITEM", 
 		"Name=roundtrip", "Value=on", "ENDITEM", 
-		"Name=seatPref", "Value=None", "ENDITEM", 
-		"Name=seatType", "Value=Coach", "ENDITEM", 
+		"Name=seatPref", "Value={seatPref}", "ENDITEM", 
+		"Name=seatType", "Value={seatType}", "ENDITEM", 
 		"Name=.cgifields", "Value=roundtrip", "ENDITEM", 
 		"Name=.cgifields", "Value=seatType", "ENDITEM", 
 		"Name=.cgifields", "Value=seatPref", "ENDITEM", 
-		"Name=findFlights.x", "Value=48", "ENDITEM", 
-		"Name=findFlights.y", "Value=13", "ENDITEM", 
+		"Name=findFlights.x", "Value=41", "ENDITEM", 
+		"Name=findFlights.y", "Value=15", "ENDITEM", 
+		"LAST");
+
+	lr_end_transaction("Заполнение полей",2);
+
+	lr_think_time(5);
+
+	lr_start_transaction("Выбор рейса");
+
+	web_reg_find("Search=Body",
+		"Text=Flight Reservation",
+		"LAST");
+	
+	web_submit_data("reservations.pl_2", 
+		"Action=http://localhost:1080/cgi-bin/reservations.pl", 
+		"Method=POST", 
+		"TargetFrame=", 
+		"RecContentType=text/html", 
+		"Referer=http://localhost:1080/cgi-bin/reservations.pl", 
+		"Snapshot=t16.inf", 
+		"Mode=HTML", 
+		"ITEMDATA", 
+		"Name=outboundFlight", "Value={outboundFlight_1}", "ENDITEM", 
+		"Name=returnFlight", "Value={returnFlight_1}", "ENDITEM", 
+		"Name=numPassengers", "Value=1", "ENDITEM", 
+		"Name=advanceDiscount", "Value=0", "ENDITEM", 
+		"Name=seatType", "Value={seatType}", "ENDITEM", 
+		"Name=seatPref", "Value={seatPref}", "ENDITEM", 
+		"Name=reserveFlights.x", "Value=38", "ENDITEM", 
+		"Name=reserveFlights.y", "Value=11", "ENDITEM", 
 		"LAST");
 
 	lr_end_transaction("Выбор рейса",2);
 
-	lr_think_time(34);
-
-	lr_start_transaction("Выбор билета");
-
-	web_submit_form("reservations.pl_2", 
-		"Snapshot=t7.inf", 
-		"ITEMDATA", 
-		"Name=outboundFlight", "Value={outboundFlight_1}", "ENDITEM", 
-		"Name=returnFlight", "Value={returnFlight_1}", "ENDITEM", 
-		"Name=reserveFlights.x", "Value=49", "ENDITEM", 
-		"Name=reserveFlights.y", "Value=12", "ENDITEM", 
-		"LAST");
-
-	lr_end_transaction("Выбор билета",2);
-
-	lr_think_time(29);
-
+	lr_think_time(5);
+	
 	lr_start_transaction("Оплата");
 
-	web_submit_form("reservations.pl_3", 
-		"Snapshot=t8.inf", 
+	web_reg_find("Search=Body",
+		"Text=Reservation Made!",
+		"LAST");
+
+	
+	web_submit_data("reservations.pl_3", 
+		"Action=http://localhost:1080/cgi-bin/reservations.pl", 
+		"Method=POST", 
+		"TargetFrame=", 
+		"RecContentType=text/html", 
+		"Referer=http://localhost:1080/cgi-bin/reservations.pl", 
+		"Snapshot=t17.inf", 
+		"Mode=HTML", 
 		"ITEMDATA", 
 		"Name=firstName", "Value={login}", "ENDITEM", 
-		"Name=lastName", "Value={pass}", "ENDITEM", 
+		"Name=lastName", "Value={login}", "ENDITEM", 
 		"Name=address1", "Value=&#1050;&#1072;&#1083;&#1080;&#1085;&#1080;&#1085;&#1072; 36", "ENDITEM", 
 		"Name=address2", "Value=", "ENDITEM", 
 		"Name=pass1", "Value={login} {login}", "ENDITEM", 
 		"Name=creditCard", "Value=123456789", "ENDITEM", 
-		"Name=expDate", "Value=", "ENDITEM", 
-		"Name=saveCC", "Value=<OFF>", "ENDITEM", 
-		"Name=buyFlights.x", "Value=48", "ENDITEM", 
-		"Name=buyFlights.y", "Value=7", "ENDITEM", 
+		"Name=expDate", "Value=05/25", "ENDITEM", 
+		"Name=oldCCOption", "Value=", "ENDITEM", 
+		"Name=numPassengers", "Value=1", "ENDITEM", 
+		"Name=seatType", "Value={seatType}", "ENDITEM", 
+		"Name=seatPref", "Value={seatPref}", "ENDITEM", 
+		"Name=outboundFlight", "Value={outboundFlight_1}", "ENDITEM", 
+		"Name=advanceDiscount", "Value=0", "ENDITEM", 
+		"Name=returnFlight", "Value={returnFlight_1}", "ENDITEM", 
+		"Name=JSFormSubmit", "Value=off", "ENDITEM", 
+		"Name=.cgifields", "Value=saveCC", "ENDITEM", 
+		"Name=buyFlights.x", "Value=34", "ENDITEM", 
+		"Name=buyFlights.y", "Value=14", "ENDITEM", 
 		"LAST");
 
-	lr_end_transaction("Оплата",2);
+	lr_end_transaction("Оплата", 2);
+	
+	lr_think_time(5);
 
-	lr_think_time(24);
-
-	lr_start_transaction("Просмотр броней");
+	lr_start_transaction("Переход на страницу Itinerary");
 
 	web_url("welcome.pl", 
 		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=itinerary", 
+		"TargetFrame=", 
 		"Resource=0", 
 		"RecContentType=text/html", 
-		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=flights", 
-		"Snapshot=t9.inf", 
+		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home", 
+		"Snapshot=t8.inf", 
 		"Mode=HTML", 
 		"LAST");
 
-	lr_end_transaction("Просмотр броней",2);
-	
-	
-	lr_output_message("%s", x);
-	
-	lr_end_transaction("4_Покупка билета «туда – обратно»",2);
-	
-	
-	
-	
+	lr_end_transaction("Переход на страницу Itinerary",2);
+
+	lr_end_transaction("4_Покупка билета туда - обратно",2);
+
 	return 0;
 }
-
 # 5 "c:\\users\\\340\353\345\352\361\340\355\344\360-\357\352\\documents\\vugen\\scripts\\\357\356\352\363\357\352\340 \341\350\353\345\362\340 \253\362\363\344\340 \226 \356\341\360\340\362\355\356\273\\\\combined_\317\356\352\363\357\352\340 \341\350\353\345\362\340 \253\362\363\344\340 \226 \356\341\360\340\362\355\356\273.c" 2
 
 # 1 "vuser_end.c" 1

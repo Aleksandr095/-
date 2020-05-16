@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <HTTPSnapshot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="2">
-  <HTTPTask id="9" hostname="iecvlist.microsoft.com" path="/IE11/1478281996/iecompatviewlist.xml" url="https://iecvlist.microsoft.com/IE11/1478281996/iecompatviewlist.xml" ip="152.199.19.161" port="443" client_ip="192.168.1.4" client_port="59880" connectionId="2452" origin="Primary" encodingType="ANSI" startDateTime="2020-05-15T03:10:04.324+03:00" startTime="384" endTime="971" blockedTime="-1" dnsTime="1" connectTime="143" sendTime="4294967295" waitTime="4294967295" receiveTime="625" sslNegotiateTime="97" responseBodySize="26267">
+  <HTTPTask id="9" hostname="iecvlist.microsoft.com" path="/IE11/1478281996/iecompatviewlist.xml" url="https://iecvlist.microsoft.com/IE11/1478281996/iecompatviewlist.xml" ip="152.199.19.161" port="443" client_ip="192.168.1.4" client_port="52815" connectionId="2320" origin="Primary" encodingType="ANSI" startDateTime="2020-05-15T23:48:30.212+03:00" startTime="332" endTime="860" blockedTime="-1" dnsTime="2" connectTime="127" sendTime="4294967295" waitTime="4294967295" receiveTime="545" sslNegotiateTime="86" responseBodySize="26268">
     <HTTPRequest method="GET">
       <HTTPHeaders>
         <HTTPHeaderEntity name=":method" index="0">
@@ -145,7 +145,7 @@
         <HTTPHeaderEntity name="age" index="2">
           <HTTPDataSet>
             <HTTPData dataFilePath="" dfeDataType="Raw" sectionDataType="1">
-              <ActualData>MjkxNg==</ActualData>
+              <ActualData>MTI0MTg=</ActualData>
             </HTTPData>
           </HTTPDataSet>
           <IsExternalData>false</IsExternalData>
@@ -177,7 +177,7 @@
         <HTTPHeaderEntity name="date" index="6">
           <HTTPDataSet>
             <HTTPData dataFilePath="" dfeDataType="Raw" sectionDataType="1">
-              <ActualData>RnJpLCAxNSBNYXkgMjAyMCAwMDoxMDowNSBHTVQ=</ActualData>
+              <ActualData>RnJpLCAxNSBNYXkgMjAyMCAyMDo0ODozMCBHTVQ=</ActualData>
             </HTTPData>
           </HTTPDataSet>
           <IsExternalData>false</IsExternalData>
@@ -241,7 +241,7 @@
         <HTTPHeaderEntity name="x-ms-request-id" index="14">
           <HTTPDataSet>
             <HTTPData dataFilePath="" dfeDataType="Raw" sectionDataType="1">
-              <ActualData>YjVhN2Y0NzgtYTAxZS0wMDhkLTAzNDYtMmFhMWE0MDAwMDAw</ActualData>
+              <ActualData>NDhkODQxOTctMTAxZS0wMDE3LTRjZGQtMmEyZDYxMDAwMDAw</ActualData>
             </HTTPData>
           </HTTPDataSet>
           <IsExternalData>false</IsExternalData>
@@ -265,7 +265,7 @@
         <HTTPAllHeaders>
           <HTTPDataSet>
             <HTTPData dataFilePath="" dfeDataType="Raw" sectionDataType="1">
-              <ActualData>SFRUUC8yLjAgMjAwDQpTdGF0dXM6IDIwMA0KY29udGVudC1lbmNvZGluZzogZ3ppcA0KYWdlOiAyOTE2DQpjYWNoZS1jb250cm9sOiBtYXgtYWdlPTIxNjAwDQpjb250ZW50LW1kNTogclNpTjdlbjVhNm0vV1NqdXU0VDBNQT09DQpjb250ZW50LXR5cGU6IHRleHQveG1sDQpkYXRlOiBGcmksIDE1IE1heSAyMDIwIDAwOjEwOjA1IEdNVA0KZXRhZzogMHg4RDdENjkwNTlDMUM5QTENCmxhc3QtbW9kaWZpZWQ6IFdlZCwgMDEgQXByIDIwMjAgMjI6NTk6MzYgR01UDQpzZXJ2ZXI6IEVDQWNjIChmcmMvOEU5RCkNCnZhcnk6IEFjY2VwdC1FbmNvZGluZw0KeC1jYWNoZTogSElUDQp4LW1zLWJsb2ItdHlwZTogQmxvY2tCbG9iDQp4LW1zLWxlYXNlLXN0YXR1czogdW5sb2NrZWQNCngtbXMtcmVxdWVzdC1pZDogYjVhN2Y0NzgtYTAxZS0wMDhkLTAzNDYtMmFhMWE0MDAwMDAwDQp4LW1zLXZlcnNpb246IDIwMDktMDktMTkNCmNvbnRlbnQtbGVuZ3RoOiAyNTk5NQ0KDQo=</ActualData>
+              <ActualData>SFRUUC8yLjAgMjAwDQpTdGF0dXM6IDIwMA0KY29udGVudC1lbmNvZGluZzogZ3ppcA0KYWdlOiAxMjQxOA0KY2FjaGUtY29udHJvbDogbWF4LWFnZT0yMTYwMA0KY29udGVudC1tZDU6IHJTaU43ZW41YTZtL1dTanV1NFQwTUE9PQ0KY29udGVudC10eXBlOiB0ZXh0L3htbA0KZGF0ZTogRnJpLCAxNSBNYXkgMjAyMCAyMDo0ODozMCBHTVQNCmV0YWc6IDB4OEQ3RDY5MDU5QzFDOUExDQpsYXN0LW1vZGlmaWVkOiBXZWQsIDAxIEFwciAyMDIwIDIyOjU5OjM2IEdNVA0Kc2VydmVyOiBFQ0FjYyAoZnJjLzhFOUQpDQp2YXJ5OiBBY2NlcHQtRW5jb2RpbmcNCngtY2FjaGU6IEhJVA0KeC1tcy1ibG9iLXR5cGU6IEJsb2NrQmxvYg0KeC1tcy1sZWFzZS1zdGF0dXM6IHVubG9ja2VkDQp4LW1zLXJlcXVlc3QtaWQ6IDQ4ZDg0MTk3LTEwMWUtMDAxNy00Y2RkLTJhMmQ2MTAwMDAwMA0KeC1tcy12ZXJzaW9uOiAyMDA5LTA5LTE5DQpjb250ZW50LWxlbmd0aDogMjU5OTUNCg0K</ActualData>
             </HTTPData>
           </HTTPDataSet>
           <IsExternalData>false</IsExternalData>
@@ -281,7 +281,7 @@
       </HTTPBody>
       <HTTPPropertySet>
         <HTTPProperty name="StreamID">1</HTTPProperty>
-        <HTTPProperty name="TotalHeadersSize">272</HTTPProperty>
+        <HTTPProperty name="TotalHeadersSize">273</HTTPProperty>
       </HTTPPropertySet>
     </HTTPResponse>
   </HTTPTask>

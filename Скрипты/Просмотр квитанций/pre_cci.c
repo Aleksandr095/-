@@ -1,4 +1,4 @@
-# 1 "c:\\users\\\340\353\345\352\361\340\355\344\360-\357\352\\documents\\vugen\\scripts\\\357\360\356\361\354\356\362\360 \352\342\350\362\340\355\366\350\351\\\\combined_\317\360\356\361\354\356\362\360 \352\342\350\362\340\355\366\350\351.c"
+# 1 "e:\\\355\340\343\360\363\347\356\367\355\356\345 \362\345\361\362\350\360\356\342\340\355\350\345\\\361\352\360\350\357\362\373\\\357\360\356\361\354\356\362\360 \352\342\350\362\340\355\366\350\351\\\\combined_\317\360\356\361\354\356\362\360 \352\342\350\362\340\355\366\350\351.c"
 # 1 "C:\\Program Files (x86)\\Micro Focus\\LoadRunner\\include/lrun.h" 1
  
  
@@ -966,7 +966,7 @@ int lr_db_getvalue(char * pFirstArg, ...);
 
 
 
-# 1 "c:\\users\\\340\353\345\352\361\340\355\344\360-\357\352\\documents\\vugen\\scripts\\\357\360\356\361\354\356\362\360 \352\342\350\362\340\355\366\350\351\\\\combined_\317\360\356\361\354\356\362\360 \352\342\350\362\340\355\366\350\351.c" 2
+# 1 "e:\\\355\340\343\360\363\347\356\367\355\356\345 \362\345\361\362\350\360\356\342\340\355\350\345\\\361\352\360\350\357\362\373\\\357\360\356\361\354\356\362\360 \352\342\350\362\340\355\366\350\351\\\\combined_\317\360\356\361\354\356\362\360 \352\342\350\362\340\355\366\350\351.c" 2
 
 # 1 "C:\\Program Files (x86)\\Micro Focus\\LoadRunner\\include/SharedParameter.h" 1
 
@@ -1132,7 +1132,7 @@ extern VTCERR2  lrvtc_noop();
 
 
 
-# 2 "c:\\users\\\340\353\345\352\361\340\355\344\360-\357\352\\documents\\vugen\\scripts\\\357\360\356\361\354\356\362\360 \352\342\350\362\340\355\366\350\351\\\\combined_\317\360\356\361\354\356\362\360 \352\342\350\362\340\355\366\350\351.c" 2
+# 2 "e:\\\355\340\343\360\363\347\356\367\355\356\345 \362\345\361\362\350\360\356\342\340\355\350\345\\\361\352\360\350\357\362\373\\\357\360\356\361\354\356\362\360 \352\342\350\362\340\355\366\350\351\\\\combined_\317\360\356\361\354\356\362\360 \352\342\350\362\340\355\366\350\351.c" 2
 
 # 1 "globals.h" 1
 
@@ -2585,30 +2585,142 @@ void
 # 8 "globals.h" 2
 
 
+
  
  
 
 
-# 3 "c:\\users\\\340\353\345\352\361\340\355\344\360-\357\352\\documents\\vugen\\scripts\\\357\360\356\361\354\356\362\360 \352\342\350\362\340\355\366\350\351\\\\combined_\317\360\356\361\354\356\362\360 \352\342\350\362\340\355\366\350\351.c" 2
+
+# 3 "e:\\\355\340\343\360\363\347\356\367\355\356\345 \362\345\361\362\350\360\356\342\340\355\350\345\\\361\352\360\350\357\362\373\\\357\360\356\361\354\356\362\360 \352\342\350\362\340\355\366\350\351\\\\combined_\317\360\356\361\354\356\362\360 \352\342\350\362\340\355\366\350\351.c" 2
 
 # 1 "vuser_init.c" 1
 vuser_init()
 {
 	return 0;
 }
-# 4 "c:\\users\\\340\353\345\352\361\340\355\344\360-\357\352\\documents\\vugen\\scripts\\\357\360\356\361\354\356\362\360 \352\342\350\362\340\355\366\350\351\\\\combined_\317\360\356\361\354\356\362\360 \352\342\350\362\340\355\366\350\351.c" 2
+# 4 "e:\\\355\340\343\360\363\347\356\367\355\356\345 \362\345\361\362\350\360\356\342\340\355\350\345\\\361\352\360\350\357\362\373\\\357\360\356\361\354\356\362\360 \352\342\350\362\340\355\366\350\351\\\\combined_\317\360\356\361\354\356\362\360 \352\342\350\362\340\355\366\350\351.c" 2
 
 # 1 "Action.c" 1
 Action()
 {
+
+ 
+	web_reg_save_param_attrib(
+		"ParamName=userSession",
+		"TagName=input",
+		"Extract=value",
+		"Name=userSession",
+		"Type=hidden",
+		"SEARCH_FILTERS",
+		"IgnoreRedirections=No",
+		"RequestUrl=*/nav.pl*",
+		"LAST");
+
+	web_url("WebTours", 
+		"URL=http://localhost:1080/WebTours/", 
+		"TargetFrame=", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=", 
+		"Snapshot=t5.inf", 
+		"Mode=HTML", 
+		"LAST");
+
+	lr_start_transaction("5_Просмотр квитанций");
+	
+	lr_start_transaction("Login");
+
+	web_reg_find("Search=Body",
+		"Text=User password was correct ",
+		"LAST");
+
+	
+	web_submit_data("login.pl",
+		"Action=http://localhost:1080/cgi-bin/login.pl",
+		"Method=POST",
+		"TargetFrame=body",
+		"RecContentType=text/html",
+		"Referer=http://localhost:1080/cgi-bin/nav.pl?in=home",
+		"Snapshot=t6.inf",
+		"Mode=HTML",
+		"ITEMDATA",
+		"Name=userSession", "Value={userSession}", "ENDITEM",
+		"Name=username", "Value={login}", "ENDITEM",
+		"Name=password", "Value={pass}", "ENDITEM",
+		"Name=JSFormSubmit", "Value=off", "ENDITEM",
+		"Name=login.x", "Value=58", "ENDITEM",
+		"Name=login.y", "Value=6", "ENDITEM",
+		"LAST");
+	
+	lr_end_transaction("Login", 2);
+
+	web_set_sockets_option("SSL_VERSION", "AUTO");
+
+	web_add_cookie("SRCHUID=V=2&GUID=422240F17A5F4911A6BB8CC46069374E&dmnchg=1; DOMAIN=iecvlist.microsoft.com");
+
+	web_add_cookie("SRCHD=AF=NOFORM; DOMAIN=iecvlist.microsoft.com");
+
+	web_add_cookie("SRCHUSR=DOB=20200510; DOMAIN=iecvlist.microsoft.com");
+
+	web_add_header("UA-CPU", 
+		"AMD64");
+
+	web_url("iecompatviewlist.xml", 
+		"URL=https://iecvlist.microsoft.com/IE11/1478281996/iecompatviewlist.xml", 
+		"TargetFrame=", 
+		"Resource=0", 
+		"RecContentType=text/xml", 
+		"Referer=", 
+		"Snapshot=t7.inf", 
+		"Mode=HTML", 
+		"LAST");
+
+	lr_think_time(5);
+
+	lr_start_transaction("Переход на страницу Itinerary");
+
+	web_reg_find("Search=Body",
+		"Text=Web Tours",
+		"LAST");
+	
+	web_url("welcome.pl", 
+		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=itinerary", 
+		"TargetFrame=", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home", 
+		"Snapshot=t8.inf", 
+		"Mode=HTML", 
+		"LAST");
+
+	lr_end_transaction("Переход на страницу Itinerary",2);
+
+	lr_think_time(5);
+
+	lr_start_transaction("logout");
+
+	web_url("SignOff Button", 
+		"URL=http://localhost:1080/cgi-bin/welcome.pl?signOff=1", 
+		"TargetFrame=body", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary", 
+		"Snapshot=t9.inf", 
+		"Mode=HTML", 
+		"LAST");
+
+	lr_end_transaction("logout",2);
+
+	lr_end_transaction("5_Просмотр квитанций",2);
+
 	return 0;
 }
-# 5 "c:\\users\\\340\353\345\352\361\340\355\344\360-\357\352\\documents\\vugen\\scripts\\\357\360\356\361\354\356\362\360 \352\342\350\362\340\355\366\350\351\\\\combined_\317\360\356\361\354\356\362\360 \352\342\350\362\340\355\366\350\351.c" 2
+# 5 "e:\\\355\340\343\360\363\347\356\367\355\356\345 \362\345\361\362\350\360\356\342\340\355\350\345\\\361\352\360\350\357\362\373\\\357\360\356\361\354\356\362\360 \352\342\350\362\340\355\366\350\351\\\\combined_\317\360\356\361\354\356\362\360 \352\342\350\362\340\355\366\350\351.c" 2
 
 # 1 "vuser_end.c" 1
 vuser_end()
 {
 	return 0;
 }
-# 6 "c:\\users\\\340\353\345\352\361\340\355\344\360-\357\352\\documents\\vugen\\scripts\\\357\360\356\361\354\356\362\360 \352\342\350\362\340\355\366\350\351\\\\combined_\317\360\356\361\354\356\362\360 \352\342\350\362\340\355\366\350\351.c" 2
+# 6 "e:\\\355\340\343\360\363\347\356\367\355\356\345 \362\345\361\362\350\360\356\342\340\355\350\345\\\361\352\360\350\357\362\373\\\357\360\356\361\354\356\362\360 \352\342\350\362\340\355\366\350\351\\\\combined_\317\360\356\361\354\356\362\360 \352\342\350\362\340\355\366\350\351.c" 2
 

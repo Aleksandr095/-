@@ -1,3 +1,0 @@
-"flightID=210296693-824-uu&flightID=210302628-1612-uu&flightID=210304083-2328-uu&flightID=21031"
-"0009-3096-uu&flightID=2103140839-38667-uu&.cgifields=4&.cgifields=1&.cgifields=3&.cgifields=2&"
-".cgifields=5&removeAllFlights.x=24&removeAllFlights.y=8"

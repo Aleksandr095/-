@@ -2588,8 +2588,10 @@ void
 
 
 
+
  
  
+
 
 
 
@@ -2606,10 +2608,7 @@ vuser_init()
 # 1 "Action.c" 1
 Action()
 {
-	int random, flightID_count, i;
-	
-	
-	
+
  
 	web_reg_save_param_attrib(
 		"ParamName=userSession",
@@ -2622,17 +2621,37 @@ Action()
 		"RequestUrl=*/nav.pl*",
 		"LAST");
 
-	web_url("WebTours",
+	web_url("WebTours", 
 		"URL=http://localhost:1080/WebTours/", 
 		"TargetFrame=", 
 		"Resource=0", 
 		"RecContentType=text/html", 
 		"Referer=", 
-		"Snapshot=t32.inf", 
+		"Snapshot=t37.inf", 
 		"Mode=HTML", 
 		"LAST");
 
-	lr_think_time(4);
+	web_set_sockets_option("SSL_VERSION", "2&3");
+
+	web_add_cookie("SRCHUID=V=2&GUID=422240F17A5F4911A6BB8CC46069374E&dmnchg=1; DOMAIN=c.urs.microsoft.com");
+
+	web_add_cookie("SRCHD=AF=NOFORM; DOMAIN=c.urs.microsoft.com");
+
+	web_add_cookie("SRCHUSR=DOB=20200510; DOMAIN=c.urs.microsoft.com");
+
+	web_add_header("UA-CPU", 
+		"AMD64");
+
+	web_url("l1.dat", 
+		"URL=https://c.urs.microsoft.com/l1.dat?v=3&cv=9.11.18362.0&os=10.0.18363.0.0&pg=4A72F430-B40C-4D36-A068-CE33ADA5ADF9", 
+		"TargetFrame=", 
+		"Resource=1", 
+		"RecContentType=application/octet-stream", 
+		"Referer=", 
+		"Snapshot=t38.inf", 
+		"LAST");
+
+	lr_think_time(5);
 
 	web_submit_data("login.pl",
 		"Action=http://localhost:1080/cgi-bin/login.pl",
@@ -2640,110 +2659,37 @@ Action()
 		"TargetFrame=body",
 		"RecContentType=text/html",
 		"Referer=http://localhost:1080/cgi-bin/nav.pl?in=home",
-		"Snapshot=t33.inf",
+		"Snapshot=t39.inf",
 		"Mode=HTML",
 		"ITEMDATA",
 		"Name=userSession", "Value={userSession}", "ENDITEM",
-		"Name=username", "Value={login}", "ENDITEM",
-		"Name=password", "Value={pass}", "ENDITEM",
+		"Name=username", "Value=user1", "ENDITEM",
+		"Name=password", "Value=1234", "ENDITEM",
 		"Name=JSFormSubmit", "Value=off", "ENDITEM",
-		"Name=login.x", "Value=65", "ENDITEM",
-		"Name=login.y", "Value=11", "ENDITEM",
+		"Name=login.x", "Value=73", "ENDITEM",
+		"Name=login.y", "Value=16", "ENDITEM",
 		"LAST");
 
-	web_reg_save_param_ex(
-		"ParamName=c_flightids",
-	    "LB=<input type=\"hidden\" name\=\"flightID\" value\=\"",
-	    "RB=\"",
-	    "NotFound=warning",
-		"Ordinal=ALL",
-		"SEARCH_FILTERS",
-		"Scope=ALL",
-		"LAST");
-    
-	
-	web_reg_save_param_ex(
-		"ParamName=c_cgifields",
-	    "lb=<input type=\"hidden\" name\=\".cgifields\" value\=\"",
-	    "rb=\"",
-	    "NotFound=warning",
-		"Ordinal=ALL",
-		"SEARCH_FILTERS",
-		"Scope=ALL",
-		"LAST");
-	
 	web_url("Itinerary Button", 
 		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=itinerary", 
 		"TargetFrame=body", 
 		"Resource=0", 
 		"RecContentType=text/html", 
 		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home", 
-		"Snapshot=t34.inf", 
+		"Snapshot=t40.inf", 
 		"Mode=HTML", 
 		"LAST");
 
-	lr_think_time(8);
-	
-	
+	web_submit_form("itinerary.pl", 
+    "Snapshot=t100.inf", 
+    "ITEMDATA", 
+    "Name=1", "Value=on", "ENDITEM",  
+    "Name=removeFlights.x", "Value=60", "ENDITEM", 
+	"Name=removeFlights.y", "Value=10", "ENDITEM", 
+	"LAST");
 
 
-	flightID_count =  atoi(lr_eval_string("{c_flightids_count}"));
-	random = rand() % (flightID_count - 1) + 1;
-	
-	lr_save_int(random, "random");
-	
-
-    lr_param_sprintf("c_buffer","%s=on&", lr_eval_string("{random}"));
- 
-    
-	
-
-	for (i=1;i<=flightID_count;i++)
-    {
-	   lr_param_sprintf("c_buffer",
-        "%sflightID=%s&",
-        lr_eval_string("{c_buffer}"),
-        lr_paramarr_idx("c_flightids",
-        i));
-
-        lr_param_sprintf("c_buffer",
-        "%s.cgifields=%s&",
-        lr_eval_string("{c_buffer}"),
-        lr_paramarr_idx("c_cgifields",
-        i));	
-	}
-	
-	
-
-	lr_save_string(lr_eval_string("{c_buffer}removeFlights.x=36&removeFlights.y=4"), "c_wcr");
-	
-	 
- 
-
- 
-	
-	web_custom_request("itinerary.pl",
-	    "URL=http://localhost:1080/WebTours/itinerary.pl",
-	    "Method=POST",
-	    "Resource=0",
-	    "RecContentType=text/html",
-	    "Referer=http://localhost:1080/WebTours/itinerary.pl",
-	    "Snapshot=t23.inf",
-	    "Mode=HTTP",
-	    "Body={c_wcr}",
-	    "LAST");
-	
-
-	web_url("SignOff Button", 
-		"URL=http://localhost:1080/cgi-bin/welcome.pl?signOff=1", 
-		"TargetFrame=body", 
-		"Resource=0", 
-		"RecContentType=text/html", 
-		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary", 
-		"Snapshot=t36.inf", 
-		"Mode=HTML", 
-		"LAST");
-
+		
 	return 0;
 }
 # 5 "c:\\users\\\340\353\345\352\361\340\355\344\360-\357\352\\documents\\vugen\\scripts\\\356\362\354\345\355\340 \342\373\341\360\340\355\355\356\351 \341\360\356\355\350\\\\combined_\316\362\354\345\355\340 \342\373\341\360\340\355\355\356\351 \341\360\356\355\350.c" 2

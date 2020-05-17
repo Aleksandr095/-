@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Users\Александр-ПК\Documents\VuGen\Scripts\Просмотр билетов без покупки
+-IC:\Program Files (x86)\Micro Focus\LoadRunner\include
+-ec:\users\александр-пк\documents\vugen\scripts\просмотр билетов без покупки\\logfile.log
+c:\users\александр-пк\documents\vugen\scripts\просмотр билетов без покупки\\combined_Просмотр билетов без покупки.c
+c:\users\александр-пк\documents\vugen\scripts\просмотр билетов без покупки\\pre_cci.c

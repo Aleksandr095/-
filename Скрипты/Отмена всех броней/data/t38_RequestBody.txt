@@ -1,4 +1,0 @@
-"flightID=25145573-10072-uu&flightID=251470390-1592392-uu&flightID=251445208-2461636-uu&flightI"
-"D=210298158-3098-uu&flightID=210298909-3888-uu&flightID=251467066-4738585-uu&flightID=25147518"
-"98-5677116-uu&.cgifields=6&.cgifields=4&.cgifields=1&.cgifields=3&.cgifields=7&.cgifields=2&.c"
-"gifields=5&removeAllFlights.x=42&removeAllFlights.y=9"

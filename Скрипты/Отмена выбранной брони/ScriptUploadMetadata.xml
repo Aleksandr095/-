@@ -41,6 +41,7 @@
     <FileEntry Name="Отмена выбранной брони.c.pickle" Filter="1" />
     <FileEntry Name="Отмена выбранной брони.ci" Filter="1" />
     <FileEntry Name="Отмена выбранной брони.prm.bak" Filter="1" />
+    <FileEntry Name="Отмена выбранной брони.sdf" Filter="1" />
     <FileEntry Name="data\" Filter="1" />
     <FileEntry Name="result1\" Filter="1" />
   </GeneralFiles>

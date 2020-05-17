@@ -1,3 +1,0 @@
-"flightID=2608-801-uu&flightID=210298167-1578-uu&flightID=210298526-2323-uu&flightID=210296693-"
-"3132-uu&.cgifields=4&.cgifields=1&.cgifields=3&.cgifields=2&removeAllFlights.x=31&removeAllFli"
-"ghts.y=12"

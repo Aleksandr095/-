@@ -1,0 +1,37 @@
+[
+    {
+        "transactionName": "login",
+        "rawStartTime": 1589914662232,
+        "rawEndTime": 1589914662370
+    },
+    {
+        "transactionName": "go to Flight",
+        "rawStartTime": 1589914667372,
+        "rawEndTime": 1589914667493
+    },
+    {
+        "transactionName": "insert to filds",
+        "rawStartTime": 1589914672493,
+        "rawEndTime": 1589914672556
+    },
+    {
+        "transactionName": "change flight",
+        "rawStartTime": 1589914677556,
+        "rawEndTime": 1589914677618
+    },
+    {
+        "transactionName": "Payment",
+        "rawStartTime": 1589914682619,
+        "rawEndTime": 1589914682688
+    },
+    {
+        "transactionName": "logout",
+        "rawStartTime": 1589914687688,
+        "rawEndTime": 1589914687784
+    },
+    {
+        "transactionName": "3_покупка билета",
+        "rawStartTime": 1589914662231,
+        "rawEndTime": 1589914687784
+    }
+]

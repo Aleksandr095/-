@@ -1,0 +1,37 @@
+[
+    {
+        "transactionName": "Вход",
+        "rawStartTime": 1589914171067,
+        "rawEndTime": 1589914171190
+    },
+    {
+        "transactionName": "Переход на страницу Flight",
+        "rawStartTime": 1589914171191,
+        "rawEndTime": 1589914171315
+    },
+    {
+        "transactionName": "Заполнение полей",
+        "rawStartTime": 1589914171315,
+        "rawEndTime": 1589914171382
+    },
+    {
+        "transactionName": "Выбор рейса",
+        "rawStartTime": 1589914171382,
+        "rawEndTime": 1589914171476
+    },
+    {
+        "transactionName": "Оплата",
+        "rawStartTime": 1589914171477,
+        "rawEndTime": 1589914171577
+    },
+    {
+        "transactionName": "Переход на страницу Itinerary",
+        "rawStartTime": 1589914171577,
+        "rawEndTime": 1589914171745
+    },
+    {
+        "transactionName": "4_Покупка билета туда - обратно",
+        "rawStartTime": 1589914171067,
+        "rawEndTime": 1589914171745
+    }
+]

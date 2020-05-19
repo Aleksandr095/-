@@ -1,9 +1,0 @@
--+
--DCCI
--D_IDA_XL
--DWINNT
--IC:\Users\Александр-ПК\Documents\VuGen\Scripts\Покупка билета
--IC:\Program Files (x86)\Micro Focus\LoadRunner\include
--ec:\users\александр-пк\documents\vugen\scripts\покупка билета\\logfile.log
-c:\users\александр-пк\documents\vugen\scripts\покупка билета\\combined_Покупка билета.c
-c:\users\александр-пк\documents\vugen\scripts\покупка билета\\pre_cci.c

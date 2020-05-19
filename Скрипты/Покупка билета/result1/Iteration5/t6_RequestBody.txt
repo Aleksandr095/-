@@ -1,3 +1,0 @@
-"advanceDiscount=0&depart=Paris&departDate=05%2F16%2F2020&arrive=San+Francisco&returnDate=06%2F"
-"15%2F2020&numPassengers=1&seatPref=Window&seatType=Coach&.cgifields=roundtrip&.cgifields=seatT"
-"ype&.cgifields=seatPref&findFlights.x=54&findFlights.y=4"

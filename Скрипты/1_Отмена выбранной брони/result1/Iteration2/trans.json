@@ -1,0 +1,27 @@
+[
+    {
+        "transactionName": "login",
+        "rawStartTime": 1589914049231,
+        "rawEndTime": 1589914049893
+    },
+    {
+        "transactionName": "Iterary",
+        "rawStartTime": 1589914049894,
+        "rawEndTime": 1589914050030
+    },
+    {
+        "transactionName": "Удаление брони",
+        "rawStartTime": 1589914050031,
+        "rawEndTime": 1589914050086
+    },
+    {
+        "transactionName": "logout",
+        "rawStartTime": 1589914050087,
+        "rawEndTime": 1589914050214
+    },
+    {
+        "transactionName": "1_Отмена выбранной брони",
+        "rawStartTime": 1589914049231,
+        "rawEndTime": 1589914050214
+    }
+]

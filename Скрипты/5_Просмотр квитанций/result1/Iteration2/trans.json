@@ -1,0 +1,22 @@
+[
+    {
+        "transactionName": "Login",
+        "rawStartTime": 1589914243310,
+        "rawEndTime": 1589914243447
+    },
+    {
+        "transactionName": "Переход на страницу Itinerary",
+        "rawStartTime": 1589914243448,
+        "rawEndTime": 1589914243586
+    },
+    {
+        "transactionName": "logout",
+        "rawStartTime": 1589914243586,
+        "rawEndTime": 1589914243677
+    },
+    {
+        "transactionName": "5_Просмотр квитанций",
+        "rawStartTime": 1589914243310,
+        "rawEndTime": 1589914243677
+    }
+]

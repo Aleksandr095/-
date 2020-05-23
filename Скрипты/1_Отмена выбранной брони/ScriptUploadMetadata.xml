@@ -14,14 +14,15 @@
     <FileEntry Name="1_Отмена выбранной брони.prm" Filter="2" />
     <FileEntry Name="globals.h" Filter="2" />
     <FileEntry Name="login.dat" Filter="2" />
-    <FileEntry Name="pass.dat" Filter="2" />
     <FileEntry Name="combined_1_Отмена выбранной брони.c" Filter="2" />
     <FileEntry Name="pre_cci.c" Filter="2" />
     <FileEntry Name="120652243440.idx" Filter="1" />
+    <FileEntry Name="168843627440.idx" Filter="1" />
     <FileEntry Name="1_Отмена выбранной брони.c.pickle" Filter="1" />
     <FileEntry Name="1_Отмена выбранной брони.ci" Filter="1" />
     <FileEntry Name="1_Отмена выбранной брони.prm.bak" Filter="1" />
     <FileEntry Name="1_Отмена выбранной брони.sdf" Filter="1" />
+    <FileEntry Name="461748440.idx" Filter="1" />
     <FileEntry Name="63469376440.idx" Filter="1" />
     <FileEntry Name="Bookmarks.xml" Filter="1" />
     <FileEntry Name="Breakpoints.xml" Filter="1" />
@@ -31,16 +32,38 @@
     <FileEntry Name="logfile.log" Filter="1" />
     <FileEntry Name="lrw_custom_body.h" Filter="1" />
     <FileEntry Name="mdrv.log" Filter="1" />
+    <FileEntry Name="mdrv1Ln.259.log" Filter="1" />
+    <FileEntry Name="mdrv1pp.21.log" Filter="1" />
+    <FileEntry Name="mdrv35O.7.log" Filter="1" />
+    <FileEntry Name="mdrv3Ea.789.log" Filter="1" />
+    <FileEntry Name="mdrv64j.699.log" Filter="1" />
+    <FileEntry Name="mdrvA0i.573.log" Filter="1" />
+    <FileEntry Name="mdrvAxh.243.log" Filter="1" />
+    <FileEntry Name="mdrvcBi.51.log" Filter="1" />
+    <FileEntry Name="mdrvEJG.165.log" Filter="1" />
+    <FileEntry Name="mdrvK5J.883.log" Filter="1" />
+    <FileEntry Name="mdrvK8t.723.log" Filter="1" />
+    <FileEntry Name="mdrvKBP.601.log" Filter="1" />
+    <FileEntry Name="mdrvmOM.125.log" Filter="1" />
+    <FileEntry Name="mdrvpYF.767.log" Filter="1" />
+    <FileEntry Name="mdrvQ0a.907.log" Filter="1" />
+    <FileEntry Name="mdrvR67.121.log" Filter="1" />
+    <FileEntry Name="mdrvS3U.19.log" Filter="1" />
+    <FileEntry Name="mdrvUdp.761.log" Filter="1" />
+    <FileEntry Name="mdrvuuS.167.log" Filter="1" />
+    <FileEntry Name="mdrvvzJ.205.log" Filter="1" />
+    <FileEntry Name="mdrvx80.995.log" Filter="1" />
+    <FileEntry Name="mdrvxdE.665.log" Filter="1" />
     <FileEntry Name="mdrv_cmd.txt" Filter="1" />
     <FileEntry Name="options.txt" Filter="1" />
     <FileEntry Name="output.bak" Filter="1" />
     <FileEntry Name="output.txt" Filter="1" />
     <FileEntry Name="OutputColoringDatabase.json" Filter="1" />
     <FileEntry Name="pass(1).dat" Filter="1" />
+    <FileEntry Name="pass.dat" Filter="1" />
     <FileEntry Name="ReplaySummaryReport.xml" Filter="1" />
     <FileEntry Name="ScriptUploadMetadata.xml" Filter="1" />
     <FileEntry Name="ThumbnailsCache.tmp" Filter="1" />
-    <FileEntry Name="TransactionsData.db" Filter="1" />
     <FileEntry Name="UserTasks.xml" Filter="1" />
     <FileEntry Name="Отмена выбранной брони.prm.bak" Filter="1" />
     <FileEntry Name="data\" Filter="1" />

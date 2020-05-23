@@ -2,7 +2,7 @@ Action()
 {
 	
 	web_reg_save_param("userSession",
-	"LB/IC=name=\"userSession\" value=\"",
+	"LB=name=\"userSession\" value=\"",
 	"RB=\"/>",
 	LAST);
 
@@ -18,12 +18,12 @@ Action()
 	
 	lr_start_transaction("3_покупка билета");
 
-	lr_start_transaction("login");
+	lr_start_transaction("Вход");
 	
 	
 
 	web_reg_find("Search=Body",
-		"Text/IC=User password was correct",
+		"Text=User password was correct",
 		LAST);
 	
 	
@@ -46,7 +46,7 @@ Action()
 
 	web_set_sockets_option("SSL_VERSION", "2&3");
 
-	lr_end_transaction("login",LR_AUTO);
+	lr_end_transaction("Вход",LR_AUTO);
 //
 //	web_add_cookie("SRCHUID=V=2&GUID=422240F17A5F4911A6BB8CC46069374E&dmnchg=1; DOMAIN=iecvlist.microsoft.com");
 //
@@ -69,10 +69,10 @@ Action()
 
 	lr_think_time(5);
 
-	lr_start_transaction("go to Flight");
+	lr_start_transaction("Переход на Flights");
 
 	web_reg_find("Search=Body",
-		"Text/IC= User has returned to the search page",
+		"Text= User has returned to the search page",
 		LAST);
 
 
@@ -96,14 +96,14 @@ Action()
 		"Snapshot=t57.inf", 
 		LAST);
 
-	lr_end_transaction("go to Flight",LR_AUTO);
+	lr_end_transaction("Переход на Flights",LR_AUTO);
 
 	lr_think_time(5);
 
-	lr_start_transaction("insert to filds");
+	lr_start_transaction("Заполнение полей");
 	
 	web_reg_find("Search=Body",
-		"Text/IC=Flight Selections",
+		"Text=Flight Selections",
 		LAST);
 	
 	// отлов списка доступных рейсов
@@ -147,15 +147,15 @@ Action()
 
 	
 	
-	lr_end_transaction("insert to filds",LR_AUTO);
+	lr_end_transaction("Заполнение полей",LR_AUTO);
 
 	lr_think_time(5);
 
-	lr_start_transaction("change flight");
+	lr_start_transaction("Выбор рейса");
 
 	
 	web_reg_find("Search=Body",
-		"Text/IC=Flight Reservation",
+		"Text=Flight Reservation",
 		LAST);
 	
 	
@@ -179,14 +179,14 @@ Action()
 		"Name=reserveFlights.y", "Value=10", ENDITEM,
 		LAST);
 	
-	lr_end_transaction("change flight",LR_AUTO);
+	lr_end_transaction("Выбор рейса",LR_AUTO);
 	
 	lr_think_time(5);
 
-	lr_start_transaction("Payment");
+	lr_start_transaction("Оплата");
 	
 	web_reg_find("Search=Body",
-		"Text/IC=Reservation Made!",
+		"Text=Reservation Made!",
 		LAST);
 
 	web_submit_data("reservations.pl_3",
@@ -218,11 +218,11 @@ Action()
 		"Name=buyFlights.y", "Value=5", ENDITEM,
 		LAST);
 
-	lr_end_transaction("Payment",LR_AUTO);
+	lr_end_transaction("Оплата",LR_AUTO);
 
 	lr_think_time(5);
 
-	lr_start_transaction("logout");
+	lr_start_transaction("Выход");
 
 	web_url("welcome.pl_2", 
 		"URL=http://localhost:1080/cgi-bin/welcome.pl?signOff=1", 
@@ -234,7 +234,7 @@ Action()
 		"Mode=HTML", 
 		LAST);
 
-	lr_end_transaction("logout",LR_AUTO);
+	lr_end_transaction("Выход",LR_AUTO);
 
 	lr_end_transaction("3_покупка билета",LR_AUTO);
 	

@@ -52,7 +52,7 @@ vuser_init=cci
 Action=cci
 vuser_end=cci
 [TransactionsOrder]
-Order="1_Отмена выбранной брони__*delimiter*__login__*delimiter*__Iterary__*delimiter*__Удаление брони__*delimiter*__logout"
+Order="1_Отмена выбранной брони__*delimiter*__Вход__*delimiter*__Itinerary__*delimiter*__Удаление брони__*delimiter*__Выход"
 [StateManagement]
 LastReplayStatus=1
 [ActiveReplay]
@@ -60,7 +60,7 @@ LastReplayedRunName=result1
 ActiveRunName=result1
 [Transactions]
 "1_Отмена выбранной брони"=
-login=
-Iterary=
+Вход=
+Itinerary=
 "Удаление брони"=
-logout=
+Выход=

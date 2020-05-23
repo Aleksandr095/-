@@ -21,9 +21,14 @@
     <FileEntry Name="combined_3_Покупка билета.c" Filter="2" />
     <FileEntry Name="pre_cci.c" Filter="2" />
     <FileEntry Name="133304402440.idx" Filter="1" />
+    <FileEntry Name="17119702440.idx" Filter="1" />
     <FileEntry Name="17480030440.idx" Filter="1" />
+    <FileEntry Name="224647796440.idx" Filter="1" />
+    <FileEntry Name="232721017440.idx" Filter="1" />
     <FileEntry Name="246070993440.idx" Filter="1" />
+    <FileEntry Name="252804940440.idx" Filter="1" />
     <FileEntry Name="255655524440.idx" Filter="1" />
+    <FileEntry Name="257225956440.idx" Filter="1" />
     <FileEntry Name="3_Покупка билета.c.pickle" Filter="1" />
     <FileEntry Name="3_Покупка билета.ci" Filter="1" />
     <FileEntry Name="3_Покупка билета.prm.bak" Filter="1" />
@@ -38,6 +43,15 @@
     <FileEntry Name="departDate.dat" Filter="1" />
     <FileEntry Name="logfile.log" Filter="1" />
     <FileEntry Name="mdrv.log" Filter="1" />
+    <FileEntry Name="mdrv46q.519.log" Filter="1" />
+    <FileEntry Name="mdrv471.617.log" Filter="1" />
+    <FileEntry Name="mdrv7GC.883.log" Filter="1" />
+    <FileEntry Name="mdrv9vq.961.log" Filter="1" />
+    <FileEntry Name="mdrvjf5.333.log" Filter="1" />
+    <FileEntry Name="mdrvQ2M.33.log" Filter="1" />
+    <FileEntry Name="mdrvScu.403.log" Filter="1" />
+    <FileEntry Name="mdrvUjo.289.log" Filter="1" />
+    <FileEntry Name="mdrvyNB.269.log" Filter="1" />
     <FileEntry Name="mdrv_cmd.txt" Filter="1" />
     <FileEntry Name="NewParam(1).dat" Filter="1" />
     <FileEntry Name="NewParam.dat" Filter="1" />
@@ -50,7 +64,6 @@
     <FileEntry Name="returnDate.dat" Filter="1" />
     <FileEntry Name="ScriptUploadMetadata.xml" Filter="1" />
     <FileEntry Name="ThumbnailsCache.tmp" Filter="1" />
-    <FileEntry Name="TransactionsData.db" Filter="1" />
     <FileEntry Name="UserTasks.xml" Filter="1" />
     <FileEntry Name="Покупка билета.prm.bak" Filter="1" />
     <FileEntry Name="data\" Filter="1" />

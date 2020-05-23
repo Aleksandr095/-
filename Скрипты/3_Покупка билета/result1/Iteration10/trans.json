@@ -1,0 +1,37 @@
+[
+    {
+        "transactionName": "Вход",
+        "rawStartTime": 1590241188944,
+        "rawEndTime": 1590241189209
+    },
+    {
+        "transactionName": "Переход на Flight",
+        "rawStartTime": 1590241189210,
+        "rawEndTime": 1590241189531
+    },
+    {
+        "transactionName": "Заполнение полей",
+        "rawStartTime": 1590241189531,
+        "rawEndTime": 1590241189680
+    },
+    {
+        "transactionName": "Выбор рейса",
+        "rawStartTime": 1590241189680,
+        "rawEndTime": 1590241189826
+    },
+    {
+        "transactionName": "Оплата",
+        "rawStartTime": 1590241189826,
+        "rawEndTime": 1590241189988
+    },
+    {
+        "transactionName": "Выход",
+        "rawStartTime": 1590241189988,
+        "rawEndTime": 1590241190174
+    },
+    {
+        "transactionName": "3_покупка билета",
+        "rawStartTime": 1590241188944,
+        "rawEndTime": 1590241190175
+    }
+]

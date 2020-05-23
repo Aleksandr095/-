@@ -2,7 +2,7 @@ Action()
 {
 
 	web_reg_save_param("userSession",
-		"LB/IC=name=\"userSession\" value=\"",
+		"LB=name=\"userSession\" value=\"",
 		"RB=\"/>",
 		LAST);
 
@@ -21,8 +21,7 @@ Action()
 
 	lr_start_transaction("4_Покупка билета туда - обратно");
 
-	lr_start_transaction("Вход");
-
+	
 //	web_add_cookie("SRCHUID=V=2&GUID=422240F17A5F4911A6BB8CC46069374E&dmnchg=1; DOMAIN=iecvlist.microsoft.com");
 //
 //	web_add_cookie("SRCHD=AF=NOFORM; DOMAIN=iecvlist.microsoft.com");
@@ -43,6 +42,13 @@ Action()
 //		LAST);
 
 	lr_think_time(5);
+	
+	lr_start_transaction("Вход");
+
+	
+	web_reg_find("Search=Body",
+		"Text=User password was correct",
+		LAST);
 
 	web_submit_data("login.pl",
 		"Action=http://localhost:1080/cgi-bin/login.pl",
@@ -65,7 +71,11 @@ Action()
 
 	lr_think_time(5);
 
-	lr_start_transaction("Переход на страницу Flight");
+	lr_start_transaction("Переход на Flights");
+	
+	web_reg_find("Search=Body",
+		"Text= User has returned to the search page",
+		LAST);
 	
 	web_url("Search Flights Button", 
 		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=search", 
@@ -86,7 +96,7 @@ Action()
 		"Snapshot=t14.inf", 
 		LAST);
 
-	lr_end_transaction("Переход на страницу Flight",LR_AUTO);
+	lr_end_transaction("Переход на Flights",LR_AUTO);
 	
 	lr_think_time(5);
 
@@ -215,7 +225,7 @@ Action()
 	
 	lr_think_time(5);
 
-	lr_start_transaction("Переход на страницу Itinerary");
+	lr_start_transaction("Itinerary");
 
 	web_url("welcome.pl", 
 		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=itinerary", 
@@ -227,7 +237,7 @@ Action()
 		"Mode=HTML", 
 		LAST);
 
-	lr_end_transaction("Переход на страницу Itinerary",LR_AUTO);
+	lr_end_transaction("Itinerary",LR_AUTO);
 
 	lr_end_transaction("4_Покупка билета туда - обратно",LR_AUTO);
 

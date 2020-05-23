@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <HTTPSnapshot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="2">
-  <HTTPTask id="37" hostname="c.urs.microsoft.com" path="/l1.dat?v=3&amp;cv=9.11.18362.0&amp;os=10.0.18363.0.0&amp;pg=4A72F430-B40C-4D36-A068-CE33ADA5ADF9" url="https://c.urs.microsoft.com/l1.dat?v=3&amp;cv=9.11.18362.0&amp;os=10.0.18363.0.0&amp;pg=4A72F430-B40C-4D36-A068-CE33ADA5ADF9" ip="23.102.47.40" port="443" client_ip="192.168.1.4" client_port="59559" connectionId="2404" origin="Primary" encodingType="ANSI" startDateTime="2020-05-19T21:47:29.232+03:00" startTime="2688" endTime="2999" blockedTime="-1" dnsTime="-1" connectTime="172" sendTime="56" waitTime="2" receiveTime="79" sslNegotiateTime="117" responseBodySize="35821">
+  <HTTPTask id="37" hostname="c.urs.microsoft.com" path="/l1.dat?v=3&amp;cv=9.11.18362.0&amp;os=10.0.18363.0.0&amp;pg=4A72F430-B40C-4D36-A068-CE33ADA5ADF9" url="https://c.urs.microsoft.com/l1.dat?v=3&amp;cv=9.11.18362.0&amp;os=10.0.18363.0.0&amp;pg=4A72F430-B40C-4D36-A068-CE33ADA5ADF9" ip="13.80.7.77" port="443" client_ip="192.168.1.8" client_port="61146" connectionId="2300" origin="Primary" encodingType="ANSI" startDateTime="2020-05-23T19:58:24.202+03:00" startTime="5816" endTime="6161" blockedTime="0" dnsTime="0" connectTime="0" sendTime="0" waitTime="0" receiveTime="0" sslNegotiateTime="0" responseBodySize="0">
     <QueryString>
       <HTTPDataSet>
         <HTTPData dataFilePath="" dfeDataType="Raw" sectionDataType="1">
@@ -149,7 +149,7 @@
         <HTTPHeaderEntity name="Date" index="4">
           <HTTPDataSet>
             <HTTPData dataFilePath="" dfeDataType="Raw" sectionDataType="1">
-              <ActualData>VHVlLCAxOSBNYXkgMjAyMCAxODo0NzoyOCBHTVQ=</ActualData>
+              <ActualData>U2F0LCAyMyBNYXkgMjAyMCAxNjo1ODoyMiBHTVQ=</ActualData>
             </HTTPData>
           </HTTPDataSet>
           <IsExternalData>false</IsExternalData>
@@ -165,7 +165,7 @@
         <HTTPAllHeaders>
           <HTTPDataSet>
             <HTTPData dataFilePath="" dfeDataType="Raw" sectionDataType="1">
-              <ActualData>SFRUUC8xLjEgMjAwIE9LDQpDYWNoZS1Db250cm9sOiBtYXgtYWdlPTAsIHByaXZhdGUNCkNvbnRlbnQtTGVuZ3RoOiAzNTYxNw0KQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9vY3RldC1zdHJlYW0NClNlcnZlcjogTWljcm9zb2Z0LUhUVFBBUEkvMi4wDQpEYXRlOiBUdWUsIDE5IE1heSAyMDIwIDE4OjQ3OjI4IEdNVA0KQ29ubmVjdGlvbjogY2xvc2UNCg0K</ActualData>
+              <ActualData>SFRUUC8xLjEgMjAwIE9LDQpDYWNoZS1Db250cm9sOiBtYXgtYWdlPTAsIHByaXZhdGUNCkNvbnRlbnQtTGVuZ3RoOiAzNTYxNw0KQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9vY3RldC1zdHJlYW0NClNlcnZlcjogTWljcm9zb2Z0LUhUVFBBUEkvMi4wDQpEYXRlOiBTYXQsIDIzIE1heSAyMDIwIDE2OjU4OjIyIEdNVA0KQ29ubmVjdGlvbjogY2xvc2UNCg0K</ActualData>
             </HTTPData>
           </HTTPDataSet>
           <IsExternalData>false</IsExternalData>

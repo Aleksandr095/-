@@ -1,5 +1,5 @@
 "firstName=user1&lastName=user1&address1=%26%231050%3B%26%231072%3B%26%231083%3B%26%231080%3B%2"
 "6%231085%3B%26%231080%3B%26%231085%3B%26%231072%3B+36&address2=&pass1=user1+user1&creditCard=1"
 "23456789&expDate=05%2F25&oldCCOption=&numPassengers=1&seatType=First&seatPref=Aisle&outboundFl"
-"ight=580%3B1509%3B05%2F19%2F2020&advanceDiscount=0&returnFlight=850%3B1509%3B06%2F16%2F2020&JS"
-"FormSubmit=off&.cgifields=saveCC&buyFlights.x=34&buyFlights.y=14"
+"ight=000%3B0%3B05%2F23%2F2020&advanceDiscount=0&returnFlight=000%3B0%3B06%2F22%2F2020&JSFormSu"
+"bmit=off&.cgifields=saveCC&buyFlights.x=34&buyFlights.y=14"

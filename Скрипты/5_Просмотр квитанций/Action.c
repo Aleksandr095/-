@@ -18,7 +18,7 @@ Action()
 
 	lr_start_transaction("5_Просмотр квитанций");
 	
-	lr_start_transaction("Login");
+	lr_start_transaction("Вход");
 
 	web_submit_data("login.pl",
 		"Action=http://localhost:1080/cgi-bin/login.pl",
@@ -37,7 +37,7 @@ Action()
 		"Name=login.y", "Value=6", ENDITEM,
 		LAST);
 	
-	lr_end_transaction("Login", LR_AUTO);
+	lr_end_transaction("Вход", LR_AUTO);
 
 	web_set_sockets_option("SSL_VERSION", "2&3");
 //
@@ -62,7 +62,7 @@ Action()
 
 	lr_think_time(5);
 
-	lr_start_transaction("Переход на страницу Itinerary");
+	lr_start_transaction("Itinerary");
 
 	web_url("welcome.pl", 
 		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=itinerary", 
@@ -74,11 +74,11 @@ Action()
 		"Mode=HTML", 
 		LAST);
 
-	lr_end_transaction("Переход на страницу Itinerary",LR_AUTO);
+	lr_end_transaction("Itinerary",LR_AUTO);
 
 	lr_think_time(5);
 
-	lr_start_transaction("logout");
+	lr_start_transaction("Выход");
 
 	web_url("SignOff Button", 
 		"URL=http://localhost:1080/cgi-bin/welcome.pl?signOff=1", 
@@ -90,7 +90,7 @@ Action()
 		"Mode=HTML", 
 		LAST);
 
-	lr_end_transaction("logout",LR_AUTO);
+	lr_end_transaction("Выход",LR_AUTO);
 
 	lr_end_transaction("5_Просмотр квитанций",LR_AUTO);
 

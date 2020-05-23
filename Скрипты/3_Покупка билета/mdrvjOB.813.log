@@ -1,0 +1,131 @@
+Action.c(227):     </style>\n
+Action.c(227):     <body bgcolor="#e0e7f1">\n
+Action.c(227):     <BR/>\n
+Action.c(227):     <BR/>\n
+Action.c(227):     <BR/>\n
+Action.c(227):     <br/>\n
+Action.c(227):     <table border="0">\n
+Action.c(227):     <tr><td></td></tr>\n
+Action.c(227):     <TR><TD></TD></TR>\n
+Action.c(227):     <TR><TD>\n
+Action.c(227):     <blockquote>\n
+Action.c(227):     <H1><b>Web Tours</b></H1>\n
+Action.c(227):     Welcome to the Web Tours site.\n
+Action.c(227):     <br/>\n
+Action.c(227):     To make reservations,please enter your account information to the left.\n
+Action.c(227):     <br/>\n
+Action.c(227):     If you haven't registered yet, <A href="/cgi-bin/login.pl?username=&amp;password=&amp;getI
+Action.c(227):     nfo=true" ><B>sign up now</B></A> to get access to all our resources.\n
+Action.c(227):     <br/>\n
+Action.c(227):     To configure the server options, use <A href="/cgi-bin/admin.pl" target="body" ><b>adminis
+Action.c(227):     tration</b></A> link.\n
+Action.c(227):     <br/><br/><br/><br/><br/><br/>\n
+Action.c(227):     <br/><small>\n
+Action.c(227):     This product uses parts of the SMT Kernel, Copyright (c) 1991-99 <A href="http://www.imati
+Action.c(227):     x.com" target="new"><B><small>iMatix Corporation</small></B></A> \n
+Action.c(227):     </small>\n
+Action.c(227):     </blockquote></TD>\n
+Action.c(227):     <TD></TD></TR>\n
+Action.c(227):     </table>\n
+Action.c(227):     </body>\n
+Action.c(227):     </HTML>\n
+Action.c(227): t=273973ms: Connecting [1] to host 127.0.0.1:1080  	[MsgId: MMSG-26000]
+Action.c(227): t=273974ms: Connected socket [1] from 127.0.0.1:34517 to 127.0.0.1:1080 in 1 ms  	[MsgId: MMSG-26000]
+Action.c(227): t=273974ms: 345-byte request headers for "http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.1, Internal ID=86)
+Action.c(227):     GET /cgi-bin/nav.pl?in=home HTTP/1.1\r\n
+Action.c(227):     Referer: http://localhost:1080/cgi-bin/welcome.pl?signOff=1\r\n
+Action.c(227):     User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko\r\n
+Action.c(227):     Accept-Encoding: gzip, deflate\r\n
+Action.c(227):     Accept-Language: ru,en-US;q=0.7,en;q=0.3\r\n
+Action.c(227):     Accept: */*\r\n
+Action.c(227):     Connection: Keep-Alive\r\n
+Action.c(227):     Host: localhost:1080\r\n
+Action.c(227):     Cookie: MSO=SID&1590242837\r\n
+Action.c(227):     \r\n
+Action.c(227): t=273976ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/welcome.pl?signOff=1" (RelFrameId=1, Internal ID=85)
+Action.c(227):     0\r\n
+Action.c(227):     \r\n
+Action.c(227): t=273977ms: Request done "http://localhost:1080/cgi-bin/welcome.pl?signOff=1"  	[MsgId: MMSG-26000]
+Action.c(227): t=274063ms: 256-byte response headers for "http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.1, Internal ID=86)
+Action.c(227):     HTTP/1.1 200 OK\r\n
+Action.c(227):     Date: Sat, 23 May 2020 14:07:17 GMT\r\n
+Action.c(227):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(227):     Expires: Fri, 22 May 2020 14:07:17 GMT\r\n
+Action.c(227):     Keep-Alive: timeout=5, max=100\r\n
+Action.c(227):     Connection: Keep-Alive\r\n
+Action.c(227):     Transfer-Encoding: chunked\r\n
+Action.c(227):     Content-Type: text/html; charset=ISO-8859-1\r\n
+Action.c(227):     \r\n
+Action.c(227): t=274064ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.1, Internal ID=86)
+Action.c(227):     5d1\r\n
+Action.c(227): t=274064ms: 2-byte chunked response overhead for "http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.1, Internal ID=86)
+Action.c(227):     \r\n
+Action.c(227): t=274064ms: 1489-byte chunked response body for "http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.1, Internal ID=86)
+Action.c(227):     <!DOCTYPE html\n
+Action.c(227):     \tPUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"\n
+Action.c(227):     \t "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\n
+Action.c(227):     <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">\n
+Action.c(227):     <head>\n
+Action.c(227):     <title>Web Tours Navigation Bar</title>\n
+Action.c(227):     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />\n
+Action.c(227):     </head>\n
+Action.c(227):     <body bgcolor="#E0E7F1">\n
+Action.c(227):     <style>\n
+Action.c(227):     blockquote {font-family: tahoma; font-size : 10pt}\n
+Action.c(227):     H1 {font-family: tahoma; font-size : 22pt; color: #993333}\n
+Action.c(227):     H3 {font-family: tahoma; font-size : 10pt; color: black}\n
+Action.c(227):     small {font-family: tahoma; font-size : 8pt}\n
+Action.c(227):     </style>\n
+Action.c(227):     <form method="post" action="/cgi-bin/login.pl" target="body">\n
+Action.c(227):     <input type="hidden" name="userSession" value="128816.75471851zzczAVVpicAiDDDDDQHfzpAHAQcf
+Action.c(227):     "/>\n
+Action.c(227):     <table border="0"><tr><td>&nbsp;</td>\n
+Action.c(227):     <td>&nbsp;</td></tr>\n
+Action.c(227):     <tr><td>&nbsp;</td>\n
+Action.c(227):     <td>&nbsp;</td></tr>\n
+Action.c(227):     <tr><td>&nbsp;</td>\n
+Action.c(227):     <td><small>&nbsp;Username</small></td></tr>\n
+Action.c(227):     <tr><td>&nbsp;</td>\n
+Action.c(227):     <td><input type="text" name="username" value="" size="14" maxlength="14"/></td></tr>\n
+Action.c(227):     <tr><td>&nbsp;</td>\n
+Action.c(227):     <td><small>&nbsp;Password</small></td>\n
+Action.c(227):     <tr><td>&nbsp;</td>\n
+Action.c(227):     <td><input type="password" name="password" value="" size="14" maxlength="14"/></td></tr>\n
+Action.c(227):     <tr><td>&nbsp;</td>\n
+Action.c(227):     <td>&nbsp;</td></tr>\n
+Action.c(227):     <tr><td>&nbsp;</td>\n
+Action.c(227):     <td><input type="image" name="login" value="Login" alt="Login" border="1" \n
+Action.c(227):     src="/WebTours/images/mer_login.gif"/></td></tr>\n
+Action.c(227):     <tr><td>&nbsp;</td><td>&nbsp;</td></tr>\n
+Action.c(227):     </table><input type="hidden" name="JSFormSubmit" value="off"/>\n
+Action.c(227):     </form>\n
+Action.c(227):     \n
+Action.c(227):     </body>\n
+Action.c(227):     </html>\n
+Action.c(227): Resource "http://localhost:1080/WebTours/images/mer_login.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(227): t=274068ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.1, Internal ID=86)
+Action.c(227):     0\r\n
+Action.c(227):     \r\n
+Action.c(227): t=274068ms: Request done "http://localhost:1080/cgi-bin/nav.pl?in=home"  	[MsgId: MMSG-26000]
+Action.c(227): web_url("welcome.pl_2") was successful, 2175 body bytes, 583 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(237): Notify: Transaction "Выход" ended with a "Pass" status (Duration: 0,1948).	[MsgId: MMSG-16873]
+Action.c(239): Notify: Transaction "3_покупка билета" ended with a "Pass" status (Duration: 25,9565 Think Time: 24,9983 Wasted Time: 0,0003).	[MsgId: MMSG-16870]
+Ending action Action.	[MsgId: MMSG-15918]
+Action was aborted.	[MsgId: MMSG-10694]
+Ending Vuser...	[MsgId: MMSG-15966]
+Starting action vuser_end.	[MsgId: MMSG-15919]
+Ending action vuser_end.	[MsgId: MMSG-15918]
+Vuser Terminated.	[MsgId: MMSG-15963]
+t=274069ms: Closed connection [0] to localhost:1080 after completing 4 request(s)  	[MsgId: MMSG-26000]
+t=274069ms: Closed connection [1] to localhost:1080 after completing 1 request(s)  	[MsgId: MMSG-26000]
+HTML-Mode memory management statistics: Reusable=5, NonReusable=0, CsMemBlockSize=4096, checks disabled  	[MsgId: MMSG-26000]
+Vuser 1 (thread 2412), ended OK."	[MsgId: MMSG-10695]
+Action.c(184): Notify: Transaction "3_покупка билета" ended with a "Stop" status (Duration: 18,4086 Think Time: 14,9994 Wasted Time: 0,0004).	[MsgId: MMSG-16870]
+Abort was called from an action.	[MsgId: MMSG-10447]
+Ending Vuser...	[MsgId: MMSG-15966]
+Starting action vuser_end.	[MsgId: MMSG-15919]
+Ending action vuser_end.	[MsgId: MMSG-15918]
+Vuser Terminated.	[MsgId: MMSG-15963]
+Action.c(184): t=274644ms: Closed connection [0] to localhost:1080 after completing 2 request(s)  	[MsgId: MMSG-26000]
+HTML-Mode memory management statistics: Reusable=5, NonReusable=0, CsMemBlockSize=4096, checks disabled  	[MsgId: MMSG-26000]
+Vuser 2 (thread 8000), ended OK."	[MsgId: MMSG-10695]

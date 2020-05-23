@@ -23,7 +23,7 @@ Action()
 
 	lr_start_transaction("1_Отмена выбранной брони");
 
-	lr_start_transaction("login");
+	lr_start_transaction("Вход");
 
 	web_add_header("UA-CPU", 
 		"AMD64");
@@ -68,11 +68,11 @@ Action()
 		"Snapshot=t50.inf", 
 		LAST);
 
-	lr_end_transaction("login",LR_AUTO);
+	lr_end_transaction("Вход",LR_AUTO);
 
 	lr_think_time(5);
 
-	lr_start_transaction("Iterary");
+	lr_start_transaction("Itinerary");
 	
 	web_reg_save_param_ex(
 		"ParamName=flightID",
@@ -95,7 +95,7 @@ Action()
 		"Mode=HTML", 
 		LAST);
 
-	lr_end_transaction("Iterary",LR_AUTO);
+	lr_end_transaction("Itinerary",LR_AUTO);
 
 	lr_think_time(5);
 
@@ -119,7 +119,7 @@ Action()
 
 	lr_think_time(5);
 
-	lr_start_transaction("logout");
+	lr_start_transaction("Выход");
 
 	web_url("SignOff Button", 
 		"URL=http://localhost:1080/cgi-bin/welcome.pl?signOff=1", 
@@ -131,7 +131,7 @@ Action()
 		"Mode=HTML", 
 		LAST);
 
-	lr_end_transaction("logout",LR_AUTO);
+	lr_end_transaction("Выход",LR_AUTO);
 
 	lr_end_transaction("1_Отмена выбранной брони",LR_AUTO);
 	

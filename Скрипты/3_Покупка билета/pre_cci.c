@@ -1,5 +1,5 @@
-# 1 "e:\\\355\340\343\360\363\347\356\367\355\356\345 \362\345\361\362\350\360\356\342\340\355\350\345\\\361\352\360\350\357\362\373\\3_\357\356\352\363\357\352\340 \341\350\353\345\362\340\\\\combined_3_\317\356\352\363\357\352\340 \341\350\353\345\362\340.c"
-# 1 "C:\\Program Files\\HPE\\LoadRunner\\include/lrun.h" 1
+# 1 "c:\\users\\\354\350\365\340\350\353\\desktop\\\355\340\343\360\363\347\356\367\355\356\345 \362\345\361\362\350\360\356\342\340\355\350\345\\appline_loadtesting\\\361\352\360\350\357\362\373\\3_\357\356\352\363\357\352\340 \341\350\353\345\362\340\\\\combined_3_\317\356\352\363\357\352\340 \341\350\353\345\362\340.c"
+# 1 "C:\\Program Files (x86)\\HPE\\LoadRunner\\include/lrun.h" 1
  
  
 
@@ -26,7 +26,7 @@
 
 
 
-# 103 "C:\\Program Files\\HPE\\LoadRunner\\include/lrun.h"
+# 103 "C:\\Program Files (x86)\\HPE\\LoadRunner\\include/lrun.h"
 
 
 
@@ -187,7 +187,7 @@ int lr_generate_uuid_free(lr_uuid_t uuid);
 int lr_generate_uuid_on_buf(lr_uuid_t buf);
 
    
-# 273 "C:\\Program Files\\HPE\\LoadRunner\\include/lrun.h"
+# 273 "C:\\Program Files (x86)\\HPE\\LoadRunner\\include/lrun.h"
 int lr_start_distributed_transaction  (char * transaction_name, lr_uuid_t correlator, long timeout  );
 
    
@@ -428,11 +428,11 @@ int   lr_msg (char * fmt, ...);
 int   lr_debug_message (unsigned int msg_class,
 									    char * format,
 										...);
-# 513 "C:\\Program Files\\HPE\\LoadRunner\\include/lrun.h"
+# 513 "C:\\Program Files (x86)\\HPE\\LoadRunner\\include/lrun.h"
 void   lr_new_prefix (int type,
                                  char * filename,
                                  int line);
-# 516 "C:\\Program Files\\HPE\\LoadRunner\\include/lrun.h"
+# 516 "C:\\Program Files (x86)\\HPE\\LoadRunner\\include/lrun.h"
 int   lr_log_message (char * fmt, ...);
 int   lr_message (char * fmt, ...);
 int   lr_error_message (char * fmt, ...);
@@ -446,7 +446,7 @@ int   lr_fail_trans_with_error (char * fmt, ...);
  
  
  
-# 540 "C:\\Program Files\\HPE\\LoadRunner\\include/lrun.h"
+# 540 "C:\\Program Files (x86)\\HPE\\LoadRunner\\include/lrun.h"
 
  
  
@@ -481,7 +481,7 @@ int   lr_eval_string_ext (const char *in_str,
                                      unsigned long const options,
                                      const char *file,
 								     long const line);
-# 574 "C:\\Program Files\\HPE\\LoadRunner\\include/lrun.h"
+# 574 "C:\\Program Files (x86)\\HPE\\LoadRunner\\include/lrun.h"
 void   lr_eval_string_ext_free (char * * pstr);
 
  
@@ -505,7 +505,7 @@ void   lr_eval_string_ext_free (char * * pstr);
  
 int lr_param_increment (char * dst_name,
                               char * src_name);
-# 597 "C:\\Program Files\\HPE\\LoadRunner\\include/lrun.h"
+# 597 "C:\\Program Files (x86)\\HPE\\LoadRunner\\include/lrun.h"
 
 
 
@@ -530,7 +530,7 @@ int	  lr_save_var (char *              param_val,
 							  unsigned long const param_val_len,
 							  unsigned long const options,
 							  char *			  param_name);
-# 621 "C:\\Program Files\\HPE\\LoadRunner\\include/lrun.h"
+# 621 "C:\\Program Files (x86)\\HPE\\LoadRunner\\include/lrun.h"
 int   lr_save_string (const char * param_val, const char * param_name);
 
 
@@ -554,7 +554,7 @@ int   lr_convert_double_to_double (const char *source_param_name, const char *fo
  
  
  
-# 700 "C:\\Program Files\\HPE\\LoadRunner\\include/lrun.h"
+# 700 "C:\\Program Files (x86)\\HPE\\LoadRunner\\include/lrun.h"
 void   lr_save_datetime (const char *format, int offset, const char *name);
 
 
@@ -616,7 +616,7 @@ char * lr_table_get_cell_by_col_name (char * param_name, int row, const char* co
 int lr_table_get_column_name_by_index (char * param_name, int col, 
 											char * * const col_name,
 											size_t * col_name_len);
-# 761 "C:\\Program Files\\HPE\\LoadRunner\\include/lrun.h"
+# 761 "C:\\Program Files (x86)\\HPE\\LoadRunner\\include/lrun.h"
 
 int lr_table_get_column_name_by_index_free (char * col_name);
 
@@ -624,7 +624,7 @@ int lr_table_get_column_name_by_index_free (char * col_name);
  
  
  
-# 776 "C:\\Program Files\\HPE\\LoadRunner\\include/lrun.h"
+# 776 "C:\\Program Files (x86)\\HPE\\LoadRunner\\include/lrun.h"
 int   lr_zip (const char* param1, const char* param2);
 int   lr_unzip (const char* param1, const char* param2);
 
@@ -649,12 +649,12 @@ int   lr_param_substit (char * file,
                                    size_t const in_len,
                                    char * * const out_str,
                                    size_t * const out_len);
-# 800 "C:\\Program Files\\HPE\\LoadRunner\\include/lrun.h"
+# 800 "C:\\Program Files (x86)\\HPE\\LoadRunner\\include/lrun.h"
 void   lr_param_substit_free (char * * pstr);
 
 
  
-# 812 "C:\\Program Files\\HPE\\LoadRunner\\include/lrun.h"
+# 812 "C:\\Program Files (x86)\\HPE\\LoadRunner\\include/lrun.h"
 
 
 
@@ -663,14 +663,14 @@ void   lr_param_substit_free (char * * pstr);
 char *   lrfnc_eval_string (char * str,
                                       char * file_name,
                                       long const line_num);
-# 820 "C:\\Program Files\\HPE\\LoadRunner\\include/lrun.h"
+# 820 "C:\\Program Files (x86)\\HPE\\LoadRunner\\include/lrun.h"
 
 
 int   lrfnc_save_string ( const char * param_val,
                                      const char * param_name,
                                      const char * file_name,
                                      long const line_num);
-# 826 "C:\\Program Files\\HPE\\LoadRunner\\include/lrun.h"
+# 826 "C:\\Program Files (x86)\\HPE\\LoadRunner\\include/lrun.h"
 
 int   lrfnc_free_parameter (const char * param_name );
 
@@ -697,7 +697,7 @@ int lr_save_searched_string(char * buffer, long buf_size, unsigned int occurrenc
 char *   lr_string (char * str);
 
  
-# 929 "C:\\Program Files\\HPE\\LoadRunner\\include/lrun.h"
+# 929 "C:\\Program Files (x86)\\HPE\\LoadRunner\\include/lrun.h"
 
 int   lr_save_value (char * param_val,
                                 unsigned long const param_val_len,
@@ -705,7 +705,7 @@ int   lr_save_value (char * param_val,
                                 char * param_name,
                                 char * file_name,
                                 long const line_num);
-# 936 "C:\\Program Files\\HPE\\LoadRunner\\include/lrun.h"
+# 936 "C:\\Program Files (x86)\\HPE\\LoadRunner\\include/lrun.h"
 
 
  
@@ -728,7 +728,7 @@ int   lr_printf (char * fmt, ...);
  
 int   lr_set_debug_message (unsigned int msg_class,
                                        unsigned int swtch);
-# 958 "C:\\Program Files\\HPE\\LoadRunner\\include/lrun.h"
+# 958 "C:\\Program Files (x86)\\HPE\\LoadRunner\\include/lrun.h"
 unsigned int   lr_get_debug_message (void);
 
 
@@ -758,7 +758,7 @@ int *   lr_localtime (long offset);
 int   lr_send_port (long port);
 
 
-# 1034 "C:\\Program Files\\HPE\\LoadRunner\\include/lrun.h"
+# 1034 "C:\\Program Files (x86)\\HPE\\LoadRunner\\include/lrun.h"
 
 
 
@@ -776,10 +776,10 @@ void vuser_declaration (void);
 
 
 
-# 1063 "C:\\Program Files\\HPE\\LoadRunner\\include/lrun.h"
+# 1063 "C:\\Program Files (x86)\\HPE\\LoadRunner\\include/lrun.h"
 
 
-# 1075 "C:\\Program Files\\HPE\\LoadRunner\\include/lrun.h"
+# 1075 "C:\\Program Files (x86)\\HPE\\LoadRunner\\include/lrun.h"
 
 
 
@@ -962,9 +962,9 @@ int lr_db_getvalue(char * pFirstArg, ...);
 
 
 
-# 1 "e:\\\355\340\343\360\363\347\356\367\355\356\345 \362\345\361\362\350\360\356\342\340\355\350\345\\\361\352\360\350\357\362\373\\3_\357\356\352\363\357\352\340 \341\350\353\345\362\340\\\\combined_3_\317\356\352\363\357\352\340 \341\350\353\345\362\340.c" 2
+# 1 "c:\\users\\\354\350\365\340\350\353\\desktop\\\355\340\343\360\363\347\356\367\355\356\345 \362\345\361\362\350\360\356\342\340\355\350\345\\appline_loadtesting\\\361\352\360\350\357\362\373\\3_\357\356\352\363\357\352\340 \341\350\353\345\362\340\\\\combined_3_\317\356\352\363\357\352\340 \341\350\353\345\362\340.c" 2
 
-# 1 "C:\\Program Files\\HPE\\LoadRunner\\include/SharedParameter.h" 1
+# 1 "C:\\Program Files (x86)\\HPE\\LoadRunner\\include/SharedParameter.h" 1
 
 
 
@@ -972,7 +972,7 @@ int lr_db_getvalue(char * pFirstArg, ...);
  
  
  
-# 100 "C:\\Program Files\\HPE\\LoadRunner\\include/SharedParameter.h"
+# 100 "C:\\Program Files (x86)\\HPE\\LoadRunner\\include/SharedParameter.h"
 
 
 
@@ -1126,7 +1126,7 @@ extern VTCERR2  lrvtc_noop();
 
 
 
-# 2 "e:\\\355\340\343\360\363\347\356\367\355\356\345 \362\345\361\362\350\360\356\342\340\355\350\345\\\361\352\360\350\357\362\373\\3_\357\356\352\363\357\352\340 \341\350\353\345\362\340\\\\combined_3_\317\356\352\363\357\352\340 \341\350\353\345\362\340.c" 2
+# 2 "c:\\users\\\354\350\365\340\350\353\\desktop\\\355\340\343\360\363\347\356\367\355\356\345 \362\345\361\362\350\360\356\342\340\355\350\345\\appline_loadtesting\\\361\352\360\350\357\362\373\\3_\357\356\352\363\357\352\340 \341\350\353\345\362\340\\\\combined_3_\317\356\352\363\357\352\340 \341\350\353\345\362\340.c" 2
 
 # 1 "globals.h" 1
 
@@ -1135,7 +1135,7 @@ extern VTCERR2  lrvtc_noop();
  
  
 
-# 1 "C:\\Program Files\\HPE\\LoadRunner\\include/web_api.h" 1
+# 1 "C:\\Program Files (x86)\\HPE\\LoadRunner\\include/web_api.h" 1
 
 
 
@@ -1143,7 +1143,7 @@ extern VTCERR2  lrvtc_noop();
 
 
 
-# 1 "C:\\Program Files\\HPE\\LoadRunner\\include/as_web.h" 1
+# 1 "C:\\Program Files (x86)\\HPE\\LoadRunner\\include/as_web.h" 1
 
 
 
@@ -1922,13 +1922,10 @@ extern VTCERR2  lrvtc_noop();
 
 
 
-# 789 "C:\\Program Files\\HPE\\LoadRunner\\include/as_web.h"
+# 789 "C:\\Program Files (x86)\\HPE\\LoadRunner\\include/as_web.h"
 
 
-# 802 "C:\\Program Files\\HPE\\LoadRunner\\include/as_web.h"
-
-
-
+# 802 "C:\\Program Files (x86)\\HPE\\LoadRunner\\include/as_web.h"
 
 
 
@@ -1953,7 +1950,10 @@ extern VTCERR2  lrvtc_noop();
 
 
 
-# 840 "C:\\Program Files\\HPE\\LoadRunner\\include/as_web.h"
+
+
+
+# 840 "C:\\Program Files (x86)\\HPE\\LoadRunner\\include/as_web.h"
 
  
  
@@ -2000,7 +2000,7 @@ extern VTCERR2  lrvtc_noop();
 
 
 
-# 908 "C:\\Program Files\\HPE\\LoadRunner\\include/as_web.h"
+# 908 "C:\\Program Files (x86)\\HPE\\LoadRunner\\include/as_web.h"
 
 
   int
@@ -2095,7 +2095,7 @@ web_stream_set_custom_mpd(
 
 
 
-# 9 "C:\\Program Files\\HPE\\LoadRunner\\include/web_api.h" 2
+# 9 "C:\\Program Files (x86)\\HPE\\LoadRunner\\include/web_api.h" 2
 
 
 
@@ -2570,7 +2570,7 @@ void
 
 # 7 "globals.h" 2
 
-# 1 "C:\\Program Files\\HPE\\LoadRunner\\include/lrw_custom_body.h" 1
+# 1 "C:\\Program Files (x86)\\HPE\\LoadRunner\\include/lrw_custom_body.h" 1
  
 
 
@@ -2599,21 +2599,21 @@ void
 
 
 
-# 3 "e:\\\355\340\343\360\363\347\356\367\355\356\345 \362\345\361\362\350\360\356\342\340\355\350\345\\\361\352\360\350\357\362\373\\3_\357\356\352\363\357\352\340 \341\350\353\345\362\340\\\\combined_3_\317\356\352\363\357\352\340 \341\350\353\345\362\340.c" 2
+# 3 "c:\\users\\\354\350\365\340\350\353\\desktop\\\355\340\343\360\363\347\356\367\355\356\345 \362\345\361\362\350\360\356\342\340\355\350\345\\appline_loadtesting\\\361\352\360\350\357\362\373\\3_\357\356\352\363\357\352\340 \341\350\353\345\362\340\\\\combined_3_\317\356\352\363\357\352\340 \341\350\353\345\362\340.c" 2
 
 # 1 "vuser_init.c" 1
 vuser_init()
 {
 	return 0;
 }
-# 4 "e:\\\355\340\343\360\363\347\356\367\355\356\345 \362\345\361\362\350\360\356\342\340\355\350\345\\\361\352\360\350\357\362\373\\3_\357\356\352\363\357\352\340 \341\350\353\345\362\340\\\\combined_3_\317\356\352\363\357\352\340 \341\350\353\345\362\340.c" 2
+# 4 "c:\\users\\\354\350\365\340\350\353\\desktop\\\355\340\343\360\363\347\356\367\355\356\345 \362\345\361\362\350\360\356\342\340\355\350\345\\appline_loadtesting\\\361\352\360\350\357\362\373\\3_\357\356\352\363\357\352\340 \341\350\353\345\362\340\\\\combined_3_\317\356\352\363\357\352\340 \341\350\353\345\362\340.c" 2
 
 # 1 "Action.c" 1
 Action()
 {
 	
 	web_reg_save_param("userSession",
-	"LB/IC=name=\"userSession\" value=\"",
+	"LB=name=\"userSession\" value=\"",
 	"RB=\"/>",
 	"LAST");
 
@@ -2629,12 +2629,12 @@ Action()
 	
 	lr_start_transaction("3_покупка билета");
 
-	lr_start_transaction("login");
+	lr_start_transaction("Вход");
 	
 	
 
 	web_reg_find("Search=Body",
-		"Text/IC=User password was correct",
+		"Text=User password was correct",
 		"LAST");
 	
 	
@@ -2657,7 +2657,7 @@ Action()
 
 	web_set_sockets_option("SSL_VERSION", "2&3");
 
-	lr_end_transaction("login",2);
+	lr_end_transaction("Вход",2);
  
  
  
@@ -2680,10 +2680,10 @@ Action()
 
 	lr_think_time(5);
 
-	lr_start_transaction("go to Flight");
+	lr_start_transaction("Переход на Flight");
 
 	web_reg_find("Search=Body",
-		"Text/IC= User has returned to the search page",
+		"Text= User has returned to the search page",
 		"LAST");
 
 
@@ -2707,14 +2707,14 @@ Action()
 		"Snapshot=t57.inf", 
 		"LAST");
 
-	lr_end_transaction("go to Flight",2);
+	lr_end_transaction("Переход на Flight",2);
 
 	lr_think_time(5);
 
-	lr_start_transaction("insert to filds");
+	lr_start_transaction("Заполнение полей");
 	
 	web_reg_find("Search=Body",
-		"Text/IC=Flight Selections",
+		"Text=Flight Selections",
 		"LAST");
 	
 	 
@@ -2758,15 +2758,15 @@ Action()
 
 	
 	
-	lr_end_transaction("insert to filds",2);
+	lr_end_transaction("Заполнение полей",2);
 
 	lr_think_time(5);
 
-	lr_start_transaction("change flight");
+	lr_start_transaction("Выбор рейса");
 
 	
 	web_reg_find("Search=Body",
-		"Text/IC=Flight Reservation",
+		"Text=Flight Reservation",
 		"LAST");
 	
 	
@@ -2790,14 +2790,14 @@ Action()
 		"Name=reserveFlights.y", "Value=10", "ENDITEM",
 		"LAST");
 	
-	lr_end_transaction("change flight",2);
+	lr_end_transaction("Выбор рейса",2);
 	
 	lr_think_time(5);
 
-	lr_start_transaction("Payment");
+	lr_start_transaction("Оплата");
 	
 	web_reg_find("Search=Body",
-		"Text/IC=Reservation Made!",
+		"Text=Reservation Made!",
 		"LAST");
 
 	web_submit_data("reservations.pl_3",
@@ -2829,11 +2829,11 @@ Action()
 		"Name=buyFlights.y", "Value=5", "ENDITEM",
 		"LAST");
 
-	lr_end_transaction("Payment",2);
+	lr_end_transaction("Оплата",2);
 
 	lr_think_time(5);
 
-	lr_start_transaction("logout");
+	lr_start_transaction("Выход");
 
 	web_url("welcome.pl_2", 
 		"URL=http://localhost:1080/cgi-bin/welcome.pl?signOff=1", 
@@ -2845,7 +2845,7 @@ Action()
 		"Mode=HTML", 
 		"LAST");
 
-	lr_end_transaction("logout",2);
+	lr_end_transaction("Выход",2);
 
 	lr_end_transaction("3_покупка билета",2);
 	
@@ -2853,12 +2853,12 @@ Action()
 	return 0;
 }
 
-# 5 "e:\\\355\340\343\360\363\347\356\367\355\356\345 \362\345\361\362\350\360\356\342\340\355\350\345\\\361\352\360\350\357\362\373\\3_\357\356\352\363\357\352\340 \341\350\353\345\362\340\\\\combined_3_\317\356\352\363\357\352\340 \341\350\353\345\362\340.c" 2
+# 5 "c:\\users\\\354\350\365\340\350\353\\desktop\\\355\340\343\360\363\347\356\367\355\356\345 \362\345\361\362\350\360\356\342\340\355\350\345\\appline_loadtesting\\\361\352\360\350\357\362\373\\3_\357\356\352\363\357\352\340 \341\350\353\345\362\340\\\\combined_3_\317\356\352\363\357\352\340 \341\350\353\345\362\340.c" 2
 
 # 1 "vuser_end.c" 1
 vuser_end()
 {
 	return 0;
 }
-# 6 "e:\\\355\340\343\360\363\347\356\367\355\356\345 \362\345\361\362\350\360\356\342\340\355\350\345\\\361\352\360\350\357\362\373\\3_\357\356\352\363\357\352\340 \341\350\353\345\362\340\\\\combined_3_\317\356\352\363\357\352\340 \341\350\353\345\362\340.c" 2
+# 6 "c:\\users\\\354\350\365\340\350\353\\desktop\\\355\340\343\360\363\347\356\367\355\356\345 \362\345\361\362\350\360\356\342\340\355\350\345\\appline_loadtesting\\\361\352\360\350\357\362\373\\3_\357\356\352\363\357\352\340 \341\350\353\345\362\340\\\\combined_3_\317\356\352\363\357\352\340 \341\350\353\345\362\340.c" 2
 

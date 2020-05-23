@@ -1,0 +1,44 @@
+[
+    {
+        "stepId": "STEP43",
+        "stepName": "Url: WebTours",
+        "infFile": "t1.inf",
+        "time": 1590241184691
+    },
+    {
+        "stepId": "STEP44",
+        "stepName": "Submit Data: login.pl",
+        "infFile": "t2.inf",
+        "time": 1590241184921
+    },
+    {
+        "stepId": "STEP45",
+        "stepName": "Url: welcome.pl",
+        "infFile": "t3.inf",
+        "time": 1590241185151
+    },
+    {
+        "stepId": "STEP46",
+        "stepName": "Submit Data: reservations.pl",
+        "infFile": "t4.inf",
+        "time": 1590241185314
+    },
+    {
+        "stepId": "STEP47",
+        "stepName": "Submit Data: reservations.pl_2",
+        "infFile": "t5.inf",
+        "time": 1590241185469
+    },
+    {
+        "stepId": "STEP48",
+        "stepName": "Submit Data: reservations.pl_3",
+        "infFile": "t6.inf",
+        "time": 1590241185616
+    },
+    {
+        "stepId": "STEP49",
+        "stepName": "Url: welcome.pl_2",
+        "infFile": "t7.inf",
+        "time": 1590241185851
+    }
+]

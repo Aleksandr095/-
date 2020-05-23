@@ -1,27 +1,27 @@
 [
     {
-        "transactionName": "login",
-        "rawStartTime": 1589914049231,
-        "rawEndTime": 1589914049893
+        "transactionName": "Вход",
+        "rawStartTime": 1590253104200,
+        "rawEndTime": 1590253105136
     },
     {
-        "transactionName": "Iterary",
-        "rawStartTime": 1589914049894,
-        "rawEndTime": 1589914050030
+        "transactionName": "Itinerary",
+        "rawStartTime": 1590253105137,
+        "rawEndTime": 1590253106454
     },
     {
         "transactionName": "Удаление брони",
-        "rawStartTime": 1589914050031,
-        "rawEndTime": 1589914050086
+        "rawStartTime": 1590253106454,
+        "rawEndTime": 1590253107662
     },
     {
-        "transactionName": "logout",
-        "rawStartTime": 1589914050087,
-        "rawEndTime": 1589914050214
+        "transactionName": "Выход",
+        "rawStartTime": 1590253107663,
+        "rawEndTime": 1590253107812
     },
     {
         "transactionName": "1_Отмена выбранной брони",
-        "rawStartTime": 1589914049231,
-        "rawEndTime": 1589914050214
+        "rawStartTime": 1590253104200,
+        "rawEndTime": 1590253107812
     }
 ]

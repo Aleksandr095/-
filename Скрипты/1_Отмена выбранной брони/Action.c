@@ -1,7 +1,7 @@
 Action()
 {
 
-	int random;
+//	int random;
 	
 	web_reg_save_param("userSession",
 	"LB/IC=name=\"userSession\" value=\"",
@@ -103,14 +103,14 @@ Action()
 	
 	
 	
-	random = rand() % atoi(lr_eval_string("{flightID_count}")) + 1;
-	lr_save_int(random, "random");
+//	random = rand() % atoi(lr_eval_string("{flightID_count}")) + 1;
+//	lr_save_int(random, "random");
 
 	
 	web_submit_form("itinerary.pl", 
 	    "Snapshot=t100.inf", 
 	    ITEMDATA, 
-	    "Name={random}", "Value=on", ENDITEM,  
+	    "Name=1", "Value=on", ENDITEM,  
 	    "Name=removeFlights.x", "Value=60", ENDITEM, 
 		"Name=removeFlights.y", "Value=10", ENDITEM, 
 		LAST);

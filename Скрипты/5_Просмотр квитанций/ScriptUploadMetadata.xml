@@ -16,6 +16,7 @@
     <FileEntry Name="login.dat" Filter="2" />
     <FileEntry Name="combined_5_Просмотр квитанций.c" Filter="2" />
     <FileEntry Name="pre_cci.c" Filter="2" />
+    <FileEntry Name="216843092440.idx" Filter="1" />
     <FileEntry Name="237045306440.idx" Filter="1" />
     <FileEntry Name="5_Просмотр квитанций.c.pickle" Filter="1" />
     <FileEntry Name="5_Просмотр квитанций.ci" Filter="1" />
@@ -29,10 +30,24 @@
     <FileEntry Name="logfile.log" Filter="1" />
     <FileEntry Name="lrw_custom_body.h" Filter="1" />
     <FileEntry Name="mdrv.log" Filter="1" />
+    <FileEntry Name="mdrv2Od.965.log" Filter="1" />
+    <FileEntry Name="mdrv2uI.631.log" Filter="1" />
+    <FileEntry Name="mdrvcBv.417.log" Filter="1" />
+    <FileEntry Name="mdrvFGR.495.log" Filter="1" />
+    <FileEntry Name="mdrvgUR.455.log" Filter="1" />
+    <FileEntry Name="mdrvHRY.239.log" Filter="1" />
+    <FileEntry Name="mdrvIXd.945.log" Filter="1" />
+    <FileEntry Name="mdrvJWG.367.log" Filter="1" />
+    <FileEntry Name="mdrvloO.511.log" Filter="1" />
+    <FileEntry Name="mdrvnw2.211.log" Filter="1" />
+    <FileEntry Name="mdrvP88.37.log" Filter="1" />
+    <FileEntry Name="mdrvPNA.755.log" Filter="1" />
     <FileEntry Name="mdrvq9t.953.log" Filter="1" />
+    <FileEntry Name="mdrvtns.885.log" Filter="1" />
     <FileEntry Name="mdrvuSz.163.log" Filter="1" />
     <FileEntry Name="mdrvWqi.943.log" Filter="1" />
     <FileEntry Name="mdrvwWK.481.log" Filter="1" />
+    <FileEntry Name="mdrvy8E.143.log" Filter="1" />
     <FileEntry Name="mdrv_cmd.txt" Filter="1" />
     <FileEntry Name="options.txt" Filter="1" />
     <FileEntry Name="output.bak" Filter="1" />
@@ -41,7 +56,6 @@
     <FileEntry Name="ReplaySummaryReport.xml" Filter="1" />
     <FileEntry Name="ScriptUploadMetadata.xml" Filter="1" />
     <FileEntry Name="ThumbnailsCache.tmp" Filter="1" />
-    <FileEntry Name="TransactionsData.db" Filter="1" />
     <FileEntry Name="UserTasks.xml" Filter="1" />
     <FileEntry Name="Просмотр квитанций.prm.bak" Filter="1" />
     <FileEntry Name="data\" Filter="1" />

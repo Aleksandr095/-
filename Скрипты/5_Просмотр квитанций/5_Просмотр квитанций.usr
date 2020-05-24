@@ -36,9 +36,9 @@ Default Profile=default.cfg
 [ExtraFiles]
 globals.h=
 [Modified Actions]
-vuser_init=0
+vuser_init=1
 Action=1
-vuser_end=0
+vuser_end=1
 [Recorded Actions]
 vuser_init=0
 Action=1
@@ -52,14 +52,14 @@ vuser_init=cci
 Action=cci
 vuser_end=cci
 [TransactionsOrder]
-Order="5_Просмотр квитанций__*delimiter*__Вход__*delimiter*__Itinerary__*delimiter*__Выход"
+Order="Вход__*delimiter*__Itinerary__*delimiter*__5_Просмотр квитанций__*delimiter*__Выход"
 [StateManagement]
 LastReplayStatus=1
 [ActiveReplay]
 LastReplayedRunName=result1
 ActiveRunName=result1
 [Transactions]
-"5_Просмотр квитанций"=
 Вход=
 Itinerary=
+"5_Просмотр квитанций"=
 Выход=

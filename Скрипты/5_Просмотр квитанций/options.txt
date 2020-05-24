@@ -2,8 +2,8 @@
 -DCCI
 -D_IDA_XL
 -DWINNT
--IE:\Нагрузочное тестирование\Скрипты\5_Просмотр квитанций
--IC:\Program Files\HPE\LoadRunner\include
--ee:\нагрузочное тестирование\скрипты\5_просмотр квитанций\\logfile.log
-e:\нагрузочное тестирование\скрипты\5_просмотр квитанций\\combined_5_Просмотр квитанций.c
-e:\нагрузочное тестирование\скрипты\5_просмотр квитанций\\pre_cci.c
+-IC:\Users\Михаил\Desktop\Нагрузочное тестирование\AppLine_LoadTesting\Скрипты\5_Просмотр квитанций
+-IC:\Program Files (x86)\HPE\LoadRunner\include
+-ec:\users\михаил\desktop\нагрузочное тестирование\appline_loadtesting\скрипты\5_просмотр квитанций\\logfile.log
+c:\users\михаил\desktop\нагрузочное тестирование\appline_loadtesting\скрипты\5_просмотр квитанций\\combined_5_Просмотр квитанций.c
+c:\users\михаил\desktop\нагрузочное тестирование\appline_loadtesting\скрипты\5_просмотр квитанций\\pre_cci.c

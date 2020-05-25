@@ -1,0 +1,81 @@
+Action.c(227): t=1382283ms: 345-byte request headers for "http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.1, Internal ID=28)
+Action.c(227):     GET /cgi-bin/nav.pl?in=home HTTP/1.1\r\n
+Action.c(227):     Referer: http://localhost:1080/cgi-bin/welcome.pl?signOff=1\r\n
+Action.c(227):     User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko\r\n
+Action.c(227):     Accept-Encoding: gzip, deflate\r\n
+Action.c(227):     Accept-Language: ru,en-US;q=0.7,en;q=0.3\r\n
+Action.c(227):     Accept: */*\r\n
+Action.c(227):     Connection: Keep-Alive\r\n
+Action.c(227):     Host: localhost:1080\r\n
+Action.c(227):     Cookie: MSO=SID&1590422094\r\n
+Action.c(227):     \r\n
+Action.c(227): t=1382286ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/welcome.pl?signOff=1" (RelFrameId=1, Internal ID=27)
+Action.c(227):     0\r\n
+Action.c(227):     \r\n
+Action.c(227): t=1382286ms: Request done "http://localhost:1080/cgi-bin/welcome.pl?signOff=1"  	[MsgId: MMSG-26000]
+Action.c(227): t=1382346ms: 256-byte response headers for "http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.1, Internal ID=28)
+Action.c(227):     HTTP/1.1 200 OK\r\n
+Action.c(227):     Date: Mon, 25 May 2020 15:54:54 GMT\r\n
+Action.c(227):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(227):     Expires: Sun, 24 May 2020 15:54:54 GMT\r\n
+Action.c(227):     Keep-Alive: timeout=5, max=100\r\n
+Action.c(227):     Connection: Keep-Alive\r\n
+Action.c(227):     Transfer-Encoding: chunked\r\n
+Action.c(227):     Content-Type: text/html; charset=ISO-8859-1\r\n
+Action.c(227):     \r\n
+Action.c(227): t=1382346ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.1, Internal ID=28)
+Action.c(227):     5cc\r\n
+Action.c(227): t=1382346ms: 2-byte chunked response overhead for "http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.1, Internal ID=28)
+Action.c(227):     \r\n
+Action.c(227): t=1382346ms: 1484-byte chunked response body for "http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.1, Internal ID=28)
+Action.c(227):     <!DOCTYPE html\n
+Action.c(227):     \tPUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"\n
+Action.c(227):     \t "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\n
+Action.c(227):     <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">\n
+Action.c(227):     <head>\n
+Action.c(227):     <title>Web Tours Navigation Bar</title>\n
+Action.c(227):     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />\n
+Action.c(227):     </head>\n
+Action.c(227):     <body bgcolor="#E0E7F1">\n
+Action.c(227):     <style>\n
+Action.c(227):     blockquote {font-family: tahoma; font-size : 10pt}\n
+Action.c(227):     H1 {font-family: tahoma; font-size : 22pt; color: #993333}\n
+Action.c(227):     H3 {font-family: tahoma; font-size : 10pt; color: black}\n
+Action.c(227):     small {font-family: tahoma; font-size : 8pt}\n
+Action.c(227):     </style>\n
+Action.c(227):     <form method="post" action="/cgi-bin/login.pl" target="body">\n
+Action.c(227):     <input type="hidden" name="userSession" value="128831.275334143zzczHfipHcfDQHzApffcDf"/>\n
+Action.c(227):     <table border="0"><tr><td>&nbsp;</td>\n
+Action.c(227):     <td>&nbsp;</td></tr>\n
+Action.c(227):     <tr><td>&nbsp;</td>\n
+Action.c(227):     <td>&nbsp;</td></tr>\n
+Action.c(227):     <tr><td>&nbsp;</td>\n
+Action.c(227):     <td><small>&nbsp;Username</small></td></tr>\n
+Action.c(227):     <tr><td>&nbsp;</td>\n
+Action.c(227):     <td><input type="text" name="username" value="" size="14" maxlength="14"/></td></tr>\n
+Action.c(227):     <tr><td>&nbsp;</td>\n
+Action.c(227):     <td><small>&nbsp;Password</small></td>\n
+Action.c(227):     <tr><td>&nbsp;</td>\n
+Action.c(227):     <td><input type="password" name="password" value="" size="14" maxlength="14"/></td></tr>\n
+Action.c(227):     <tr><td>&nbsp;</td>\n
+Action.c(227):     <td>&nbsp;</td></tr>\n
+Action.c(227):     <tr><td>&nbsp;</td>\n
+Action.c(227):     <td><input type="image" name="login" value="Login" alt="Login" border="1" \n
+Action.c(227):     src="/WebTours/images/mer_login.gif"/></td></tr>\n
+Action.c(227):     <tr><td>&nbsp;</td><td>&nbsp;</td></tr>\n
+Action.c(227):     </table><input type="hidden" name="JSFormSubmit" value="off"/>\n
+Action.c(227):     </form>\n
+Action.c(227):     \n
+Action.c(227):     </body>\n
+Action.c(227):     </html>\n
+Action.c(227): Resource "http://localhost:1080/WebTours/images/mer_login.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(227): t=1382352ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.1, Internal ID=28)
+Action.c(227):     0\r\n
+Action.c(227):     \r\n
+Action.c(227): t=1382352ms: Request done "http://localhost:1080/cgi-bin/nav.pl?in=home"  	[MsgId: MMSG-26000]
+Action.c(227): web_url("welcome.pl_2") was successful, 2170 body bytes, 583 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(237): Notify: Transaction "Выход" ended with a "Pass" status (Duration: 0,1462).	[MsgId: MMSG-16873]
+Action.c(239): Notify: Transaction "3_покупка билета" ended with a "Pass" status (Duration: 25,9573 Think Time: 25,0008 Wasted Time: 0,0004).	[MsgId: MMSG-16870]
+Ending action Action.	[MsgId: MMSG-15918]
+Ending iteration 1.	[MsgId: MMSG-15965]
+Waiting 93,8490 seconds for iteration pacing.	[MsgId: MMSG-15996]
